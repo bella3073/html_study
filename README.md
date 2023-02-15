@@ -17,3 +17,10 @@
   <li>ul, ol 형제태그로는 <em>em</em>과 <strong>strong</strong>이 있음</li>
   <li>목록 순서 없는 것은 ul 태그로</li>
 </ol>
+<dl>
+  <dt>dl, dt, dd</dt>
+  <dd>dl : dt와 dd를 묶는 박스</dd>
+  <dd>dt : 제목</dd>
+  <dd>dd : 내용</dd>
+  <dd>dd : 내용 안에 ul, ol 을 넣을 수 있어 목록 정리 가능함</dd>
+</dl>
