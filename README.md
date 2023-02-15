@@ -8,7 +8,7 @@
 <h2>23.02.14 - HTML - 문서태그</h2>
 <blockquote cite="https://webty.tistory.com/85">블로그 참고 - https://webty.tistory.com/85</blockquote>
 <p>blockquote, strong, em, sub, sup, code, del, q, addres, hr, s</p>
-<p><br><blockquote>blockquote</blockquote> <strong>strong</strong> <em>em</em> <sup>sup</sup> <sub>sub</sub> <code>code</code> <del>del</del> <q>q</q> <address>address</address> <s>s</s></p>
+<p><br><blockquote>blockquote</blockquote> <strong>strong</strong> <em>em</em> <sup>sup</sup> <sub>sub</sub> <code>code</code> <del>del</del> <q>q</q> <address>address</address> <s>s</s> </p>
 <p>gnb, inb, snb, fnb, breadcrumbs</p>
 <h2>23.02.15 - HTML - 문서태그</h2>
 <p>ul, ol 태그 사용하여 목록 작성할 때, 목록 설명으로 p 태그도 함께 써야한다면 /ul, /ol 태그 안 쪽에 작성하여야 함</p>
