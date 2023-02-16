@@ -24,3 +24,12 @@
   <dd>dd : 내용</dd>
   <dd>dd : 내용 안에 ul, ol 을 넣을 수 있어 목록 정리 가능함</dd>
 </dl>
+<div class="study">
+  <h2>23.02.16 - HTML - 시맨틱태그, 그룹테그</h2>
+  <dl>
+    <dt>main, div, class</dt>
+    <dd>main은 가장 큰 틀</dd>
+    <dd>div는 2개 이상의 블록 혹은 인라인을 묶는데 사용 (그룹과 같은 용도, div class="묶은 태그 그룹명"으로 정리함)</dd>
+    <dd>class 태그는 어디에든 사용 가능함</dd>
+  </dl>
+</div>
