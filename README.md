@@ -33,4 +33,12 @@
     <dd>class 태그는 어디에든 사용 가능함</dd>
   </dl>
 </div>
-<h2>23.02.17 - HTML - 이미지, 비디오 태그</2>
+<h2>23.02.17 - HTML - 이미지, 비디오 태그</h2>
+<ul>
+  <li>img src="./02_image_video/images/qucik_topinfo.jpg" alt="24시간 주문가능, 오후 7시까지 결제 시 당일발송"</li>
+  <li>이미지 업로드 태그 / ./ : 현재경로, / : 하위폴더로 가는 경로 / alt : 시각장애인들을 위한 이미지 설명</li>
+  <li>img src="./02_image_video/images/m_box_bg01.gif" alt=""</li>
+  <li>alt="" 이렇게 빈 칸으로 남겨둘 수도 있음. 이미지의 해석이 불필요할 때 사용</li>
+  <li>video src="./02_image_video/video/cat.mp4" autoplay muted loop controls</li>
+  <li>비디오 업로드 태그 / autoplay 자동재생, muted 무음모드, loop 반복재생, controls 컨트롤바</li>
+</ul>
