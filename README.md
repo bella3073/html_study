@@ -42,3 +42,28 @@
   <li>video src="./02_image_video/video/cat.mp4" autoplay muted loop controls</li>
   <li>비디오 업로드 태그 / autoplay 자동재생, muted 무음모드, loop 반복재생, controls 컨트롤바</li>
 </ul>
+<h2>23.02.20 - Table</h2>
+<table>
+  <thead>
+    <tr>
+      <th>구분</th>
+      <th>태그명</th>
+      <th>의미</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3">block</td>
+      <td>&lt;tr&gt;</td>
+      <td>가로행 태그</td>
+    </tr>
+    <tr>
+      <td>&lt;td&gt;</td>
+      <td>내용(열)태그</td>
+    </tr>
+    <tr>
+      <td>&lt;th&gt;</td>
+      <td>제목(열)태그</td>
+    </tr>
+  </tbody>
+</table>
