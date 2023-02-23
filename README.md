@@ -80,3 +80,16 @@
 <label><input type="radio" name="quiz2" value="checkbox">2. checkbox</label>
 </fieldset>
 </form>
+<h2>23.02.23 - CSS - 첫시간, font, html 효과 reset</h2>
+<p>html을 reset하는 css명은 reset.css</p>
+<p>HTML = 와 CSS : , HTML / 와 CSS ; 은 같은 뜻으로 사용됨</p>
+<p>디자인 적용할 때에는 reset 밑으로 작성할 것.<br>
+  reset 위로 작성 시, 디자인도 초기화 됨.</p>
+<ul><strong>font</strong></ul>
+  <li>전체적으로 적용할 때에는 reset.css에 작성</li>
+  <li>메인 글꼴에 문제가 생겼을 때, 다른 글꼴을 대신 보여주기 위해 두 가지 글꼴설정함</li>
+<p><br></p>
+<ol><strong>웹 주소 글꼴을 가져오는 방법</strong></ol>
+  <li>구글 폰트 사이트에 들어가 마음에 드는 글꼴 찾기</li>
+  <li>사용하려는 폰트 크기 선택 후, @import → style 사이 텍스트 복사 붙여넣기 (reset.css 넣을 경우 가장 윗쪽)</li>
+  <li>파란색 박스 부분 복사 붙여넣기 {} 사이 첫번째에 (하단 코드 참고)</li>
