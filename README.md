@@ -93,3 +93,21 @@
   <li>구글 폰트 사이트에 들어가 마음에 드는 글꼴 찾기</li>
   <li>사용하려는 폰트 크기 선택 후, @import → style 사이 텍스트 복사 붙여넣기 (reset.css 넣을 경우 가장 윗쪽)</li>
   <li>파란색 박스 부분 복사 붙여넣기 {} 사이 첫번째에 (하단 코드 참고)</li>
+<h2>23.02.24 - CSS - 글꼴 부분 설정법, favicon</h2>
+<p>**폰트 사이즈 작성했을 때, 주석으로 몇 px인지 적어두면 좋음</p>
+<p><em>폰트 px -> em으로 바꿔주는 이유</em></p>
+<p>em은 상대적인 사이즈라 상대가 사용하는 디바이스에 최적화된 크기로 자동 설정됨<br>
+  하지만 em은 근접한 부모도 따져보기 때문에, em보다는 <strong>rem</strong>단위를 써야함</p>
+<ul>글꼴 설정할 때, 가장 많이 사용하는 코드</ul>
+  <li><em>글꼴</em> font-family:'글꼴', font</li>
+  <li><em>사이즈</em> font-size:0.938rem;</li>
+  <li><em>행간</em> line-height:1.6;</li>
+  <li><em>자간</em> letter-spacing:-0.02em;/* figma -2% */</li>
+<ul>글꼴 부분 설정법</ul>
+  <li>reset.css가 아닌, design.css 상단에 import url 붙이기 (import는 항상 상단에 위치**)</li>
+  <li>font-family는 적용하려는 곳에 붙여넣기</li>
+<ul>favicon 아이콘 이용법</ul>
+  <li>피그마 플러그인 이용하기</li>
+  <li>flaticon 등 해외 유/무료 아이콘 사이트 사용하기</li>
+  <li>일러스트레이터, 포토샵, 피그마를 이용하여 직접 그려서 사용하기</li>
+  
