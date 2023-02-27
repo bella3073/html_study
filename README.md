@@ -110,4 +110,11 @@
   <li>피그마 플러그인 이용하기</li>
   <li>flaticon 등 해외 유/무료 아이콘 사이트 사용하기</li>
   <li>일러스트레이터, 포토샵, 피그마를 이용하여 직접 그려서 사용하기</li>
-  
+  <h2>23.02.27 - CSS - float</h2>
+  <p>블록 요소의 흐름을 변경하기 위해 사용하는 레이아웃 배치 css 속성</p>
+  <p>HTML4 이전 버전부터 사용하던 레이아웃 개념으로 호환성이 높음</p>
+  <p>웹 페이지에서 좌우로 배치되는 레이아웃 제작 시 사용</p>
+  <ul>자식에 float적용 사 생기는 부모 오류 해결법</ul>
+    <li>높이 강제부여 (많이 사용되지는 않음/ ex, height:100px;</li>)
+    <li>자식높이재인식 (ex, overflow:hidden;)</li>
+    <li>가상자식생성 (ex, .wrap::after {clear:both; display:block; content:'';} )</li>
