@@ -1,0 +1,35 @@
+header {
+    background-color:bisque;
+    /* overflow:hidden; */
+    /* height:100px; */
+}
+header::after {clear:both; display:block; content:'';}
+header h1 {
+    background-color:lightcoral;
+    float:left;
+}
+header form {
+    background-color:lightslategrey;
+    float:left;
+}
+header .lnb {
+    background-color:tomato;
+    float:right;
+}
+header .lnb a {}
+header h1, header form, header .lnb {
+    width:100px; height:100px;
+}
+main {}
+main .path {}
+main .path .skip {}
+main .path dd {}
+main .path dd span {}
+main .path dd .awesome::after {
+    display:inline; content:'\f105';
+}
+
+main .path .blog .awesome::before,
+main .path .blog .awesome::after {
+    display:inline; content:'\f0da';
+}
