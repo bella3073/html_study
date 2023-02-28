@@ -29,6 +29,7 @@ main section h2 {
 }
 main section p {
     padding:50px 25px 0;
+    line-height:1.5;
 }
 main section:last-child p:nth-child(5) {padding-bottom:100px;}
 main section h2+p,
