@@ -1,13 +1,37 @@
+/* all_layout */
+header,
+main > div > *,
+/* main .bg_path .top,
+main .bg_w .title,
+main .bg .contents,
+main .bg_w .contents, */
+footer .ft_top,
+footer address,
+footer > p {
+    width:1200px; margin:0 auto;
+}
+main > div > * {
+    text-align:center;
+}
 /* header---------------------------------------------------------------- */
-header {}
-header h1 {}
+header {height:92px; overflow:hidden;}
+header h1 {float:left; padding-top:5px;}
 header h1 a {}
 header h1 a img {width:60px;}
-header nav {}
-header nav a {font-size:1.063rem;}
-header nav .active {color:#36b4e5;}
-header .lnb {}
+header nav {
+    float:left; line-height:92px;
+    margin-left:300px;
+}
+header nav a {font-size:1.063rem; padding-left:30px;}
+header nav .active {color:#36b4e5; padding:0;}
+header .lnb {float:right; line-height:92px;}
 header .lnb a {}
+header .lnb a:nth-child(2)::before {
+    content:'|';
+    display:inline;
+    padding-left:10px;
+    margin-right:10px;
+}
 /* mian------------------------------------------------------------------ */
 main {}
 /* 공통 배경 */
@@ -21,9 +45,9 @@ main .border {
     border-left:none; border-right:none;
 }
 main .bg_path {background-color:#f1f1f1;}
-main .bg_path .top {padding:20px 0px;}
+main .bg_path .top {padding:20px 0;}
 main .bg_path .top dt {}
-main .bg_path .top dd {}
+main .bg_path .top dd {text-align:right;}
 main .bg_path .top dd span {}
 main .bg_path .top dd em {}
 /* 경영이념 제목------------------- */
@@ -47,12 +71,25 @@ main .bg_w .contents p {
     line-height:1.5;
     letter-spacing:-0.01em;
 }
+main .bg_w .contents p:nth-child(2) {margin-bottom:100px;}
 /* 경영이념 GOAL, STRATEGY--------- */
 main .bg .contents h2 {font-size:1.250rem; margin-bottom:30px;}
-main .bg .contents ul {}
+main .bg .contents ul {
+    /* overflow:hidden; */
+    display:inline-block;
+    /* float의 부모높이 0처리 오류해결방법으로 display:inline-block도 가능하다 */
+}
+main .bg .contents h2:nth-child(3) {
+    margin-top:100px;
+}
 main .bg .contents .goal_list li {
     width:250px; height:250px;
     border-radius:50%;
+    line-height:250px;
+    /* float:left; */
+    display:inline-block;
+    box-shadow:0 0 10px gray;
+    margin-left:-10px;
 }
 main .bg .contents ul li {
     font-size:1.5rem;
@@ -63,19 +100,28 @@ main .bg .contents .last {background-color:#f3c300;}
 main .bg .contents .strategy_list li {
     width:180px; height:180px;
     border-radius:50%;
+    /* display:inline-block; */
+    float:left;
+    padding:55px 20px 0;
+    /* box-shadow:x출 y축 blur color; */
+    box-shadow:0 0 10px gray;
 }
 main .bg .contents ul li h3 {font-size:1.063rem;}
 main .bg .contents ul li p {}
 /* footer---------------------------------------------------------------- */
-footer {}
-footer .ft_top {}
-footer .ft_top .ft_left {}
-footer .ft_top .ft_left a {font-weight:700; line-height:1.5;}
-footer .ft_top .ft_right {}
+footer {padding:50px 0;}
+footer .ft_top {overflow:hidden;}
+footer .ft_top .ft_left {float:left;}
+footer .ft_top .ft_left a {
+    font-weight:700; line-height:1.5;
+}
+footer .ft_top .ft_right {
+    float:right;
+}
 footer .ft_top .ft_right a {
     border:1px solid #aaa;
     display:inline-block;
-    padding:10px 20px
+    padding:10px 20px;
 }
-footer address {}
-footer address+p {}
+footer address {line-height:1.5;}
+footer address+p {padding-top:15px;}

@@ -10,27 +10,36 @@
 </head>
 <body>
     <header>
-        <h1>RIDIBOOKS</h1>
+        <h1><a href="#"><img src="#" alt="RIDIBOOKS"></a></h1>
     </header>
-    <form action="#" method="post">
-        <fieldset>
-            <ul class="login_box">
-                <li>
-                    <input type="text" name="user_id" placeholder="아이디" autofocus>
-                </li>
-                <li>
-                    <input type="password" name="user_pw" placeholder="비밀번호">
-                </li>
-                <li>
-                    <label for="login_keep_btn"><input type="radio" id="login_keep_btn" value="login_keep" name="login_keep">로그인 상태 유지</label>
-                    <a href="#">아이디 찾기</a> | <a href="#">비밀번호 재설정</a>
-                </li>
-            </ul>
-            <div class="btn_g">
-                <button type="button">로그인</button>
-                <button type="submit">회원가입</button>
-            </div>
-        </fieldset>
-    </form>
+    <main>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>로그인 양식</legend>
+                <ul class="login_box">
+                    <li>
+                        <input type="text" name="user_id" placeholder="아이디" autofocus>
+                    </li>
+                    <li>
+                        <input type="password" name="user_pw" placeholder="비밀번호">
+                    </li>
+                    <li>
+                        <label for="login_y">
+                            <input type="checkbox" id="login_y" value="login_y">
+                            <span>로그인 상태 유지</span>
+                        </label>
+                        <span>
+                            <a href="#">아이디 찾기</a>
+                            <a href="#">비밀번호 재설정</a>
+                        </span>
+                    </li>
+                </ul>
+                <div class="btn_g">
+                    <button type="button">로그인</button>
+                    <a href="#">회원가입</a>
+                </div>
+            </fieldset>
+        </form>
+    </main>
 </body>
 </html>
