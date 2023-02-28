@@ -118,3 +118,17 @@
     <li>높이 강제부여 (많이 사용되지는 않음/ ex, height:100px;</li>)
     <li>자식높이재인식 (ex, overflow:hidden;)</li>
     <li>가상자식생성 (ex, .wrap::after {clear:both; display:block; content:'';} )</li>
+ <h2>23.02.28 - CSS - 가운데정렬법, 박스쉐도우, nth</h2>
+  <dl>
+    <dt>가운데 정렬법</dt>
+    <dd>margin:0 auto; /* block 가운데 정렬 (화면크기를 줄이거나 키워도 항상 중앙에 위치하도록 함, block만 가능!!) */</dd>
+    <dd>text-align:center; /* inline 가운데 정렬 */</dd>
+    <dd>line-height:100px; /* 1줄일 경우만 가능, 수직가운데정렬 */</dd>
+    <dt>도형에 쉐도우 만드는법</dt>
+    <dd>box-shadow:x축 y축 blur color;</dd>
+    <dt>nth</dt>
+    <dd>nth (even) : 짝수</dd>
+    <dd>nth (odd) : 홀수</dd>
+    <dd>nth (숫자n) : 숫자배수로</dd>
+    <dd>nth (숫자n+1) : 숫자 1부터 숫자 n배수로 선택됨</dd>
+  </dl>
