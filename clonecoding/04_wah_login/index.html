@@ -7,14 +7,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>로그인 | 웹접근성연구소</title>
+    <link href="./styles/reset.css" rel="stylesheet" type="text/css">
+    <link href="./styles/main.css" rel="stylesheet" type="text/css">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
         <form action="#" method="get"></form>
         <fieldset>
-            <legend>검색 양식</legend>
+            <legend class="skip">검색 양식</legend>
             <input type="text" placeholder="검색어입력" name="user_search">
-            <button type="button"><img src="#" alt="검색"></button>
+            <button type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
         </fieldset>
     </header>
     <main>
@@ -22,7 +26,7 @@
             <h2>회원관련</h2>
             <div class="menu">
                 <a href="#">회원가입</a>
-                <a href="#">로그인</a>
+                <a href="#" class="active">로그인</a>
                 <a href="#">ID/PW 찾기</a>
             </div>
         </aside>
@@ -30,11 +34,13 @@
             <div class="title_path">
                 <h1>로그인</h1>
                 <dl>
-                    <dt>현재페이지경로</dt>
+                    <dt class="skip">현재페이지경로</dt>
                     <dd>
-                        <img src="#" alt="홈으로">
+                        <i class="fa-solid fa-house"></i>
+                        <i class="fa-solid fa-angle-right"></i>
                         <span>회원관련</span>
-                        로그인
+                        <i class="fa-solid fa-angle-right"></i>
+                        <a href="#">로그인</a>
                     </dd>
                 </dl>
             </div>
@@ -44,11 +50,11 @@
                     <p>비회원이신 분은 아래 회원가입을 이용 바랍니다.</p>
                     <form action="#" method="post">
                         <fieldset>
-                            <legend>로그인양식</legend>
+                            <legend class="skip">로그인양식</legend>
                             <ul class="login_g">
                                 <li>
                                     <span>아이디</span>
-                                    <input type="text" name="user_id">
+                                    <input type="text" autofocus name="user_id">
                                 </li>
                                 <li>
                                     <span>비밀번호</span>
@@ -63,7 +69,7 @@
                         <a href="#">아이디, 비밀번호 찾기</a>
                     </div>
                 </div>
-                <a href="#" class="top_link">위로</a>
+                <a href="#" class="top_link"><i class="fa-solid fa-angle-up"></i></a>
                 <div class="btn_text">
                     <p>웹의 힘은 그것의 보편성에 있다. 장애에 구애없이 모든 사람이 접근할 수 있는 것이 필수적인 요소이다.</p>
                     <p>(The power of the Web is in its universality, Access by everyone regardless of disability is an essential aspect.)</p>
