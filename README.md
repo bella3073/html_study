@@ -154,3 +154,15 @@
   <li>background-position:right top; /*x y*/</li>
   <li>background-position:right -100px; /*-px로 해야 윗쪽으로 올라감*/</li>
  </ul>
+<h2>23.03.03 - CSS - 글자 사이 도형 넣기</h2>
+<ul>
+  <li>
+    <p>1. content:'|'; display:inline; margin-left:10px;</p>
+    <p>1 방법의 단점 : 글자크기보다 작거나 크게 설정이 불가능해 디자인 다양성이 부족함</p>
+    <p>2. width:2px; height:5px; background-color: red;
+          content:''; display: inline-block;
+          position:relative;
+          right:-7px; top:2px;</p>
+    <p>2번 방법을 더 많이 사용함</p>
+  </li>
+</ul>
