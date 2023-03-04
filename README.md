@@ -166,3 +166,12 @@
     <p>2번 방법을 더 많이 사용함</p>
   </li>
 </ul>
+<h2>23.03.04 - CSS - 말 줄임 처리 하는 법</h2>
+<ul>
+  <li>
+    <p>원하는 너비 설정 (부모 크기의 %로 설정)</p>
+    <p>text-overflow:ellipsis; -> 외부처리를 말 줄임으로 설정</p>
+    <p>white-space:nowrap; -> 한 줄처리 설정</p>
+    <p>overflow:hidden; -> 정해진 크기 안에서만 보이게 하는 설정</p>
+  </li>
+</ul>
