@@ -175,3 +175,15 @@
     <p>overflow:hidden; -> 정해진 크기 안에서만 보이게 하는 설정</p>
   </li>
 </ul>
+<h2>23.03.07 - CSS - 이미지 크기 조정법 / 마우스 올렸을 때, 변형 시키는 법 / 배경 투명도 설정</h2>
+<dl>
+  <dt>이미지 크기 조정법</dt>
+  <dd>header h1 {width:100px;}<br>header h1 a {}<br>header h1 a img {width:100%;}</dd>
+  <dd>img에는 너비 100%를 적용시켜 부모 크기에 따를 수 있게 가변형으로 만들고, 부모에게 원하는 크기를 설정</dd>
+  <dt>마우스 올렸을 때, 변형 시키는 법</dt>
+  <dd>선택자:hover {}</dd>
+  <dt>배경 투명도 설정</dt>
+  <dd>background:rgba(0,0,0,0.6);<br>position:fixed; left:0; top:0;<br>width:100%; z-index:9999;</dd>
+  <dd>background:rgba 작성 후, position 작성해야함<br>width에 문제가 생길 수 있어 width:100% 작성 필수
+  <br>중첩 순서에 오류가 생길 수 있어 z-index:9999; 작성도 필수임</dd>
+</dl>
