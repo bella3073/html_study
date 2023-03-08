@@ -187,3 +187,18 @@
   <dd>background:rgba 작성 후, position 작성해야함<br>width에 문제가 생길 수 있어 width:100% 작성 필수
   <br>중첩 순서에 오류가 생길 수 있어 z-index:9999; 작성도 필수임</dd>
 </dl>
+<h2>23.03.08 - CSS - 글자 보이지 않게 설정하는 법 / sprite / bkground 통합속성</h2>
+<dl>
+  <dt>글자 보이지 않게 설정하는 법</dt>
+  <dd>width:24px; height:24px; text-indent:-9999px;</dd>
+  <dd>높이와 너비를 준 뒤, text-indent:-9999px; 로 설정</dd>
+  <dt>sprite</dt>
+  <dd>background-image:url(./images/icon_controls/css_sprites.png);<br>
+    background-repeat:no-repeat;<br>
+    background-position:0 -3px; -> 이미지 위치 조정<br>
+    width:24px; height:24px; -> 이미지 보이는 크기 설정<br>
+    text-indent:-9999px; -> 의미 있는 이미지 처리 할 때, 뜻을 적어둔 글자가 보이지 않도록 숨기는 코드
+   </dd>
+   <dt>bkground 통합속성</dt>
+   <dd>background:color image repeat position</dd>
+</dl>
