@@ -1,0 +1,154 @@
+/* header */
+header {
+    width:1152px;
+    margin:0 auto;
+    letter-spacing:-0.02em;
+}
+header .top {
+    height:48px;
+    /* top_left, top_right 부모대상 */
+    display:flex;
+    flex-flow:row nowrap;
+    align-items:center;
+    justify-content:space-between;
+}
+header .top .top_left {
+    /* h1, nav 옆으로 보내기 위한 부모대상 */
+    display:flex;
+    flex-flow:row nowrap;
+    align-items:center;
+}
+header .top .top_left h1 {}
+header .top .top_left h1 a {}
+header .top .top_left h1 a img {
+    position:relative;
+    top:-4px;
+}
+header .top .top_left nav {}
+header .top .top_left nav a {
+    padding-left:10px;
+    font-weight:500;
+}
+header .top .top_right {}
+header .top .top_right a {
+    padding-left:10px;
+    font-weight:500;
+}
+header .top .top_right a:first-child {padding:0;}
+header .btm {
+    height:119px;
+    display:flex;
+    flex-flow:row nowrap;
+    align-items:center;
+    justify-content:space-between;
+}
+header .btm h1 {}
+header .btm h1 a {}
+header .btm h1 a img {}
+header .btm #searchFrm {
+    border:3px solid #1e6cb3;
+    background:#fff;
+    width:300px; height:45px;
+    padding:5px 0;
+}
+header .btm #searchFrm fieldset {
+    display:flex;
+    flex-flow:row nowrap;
+    align-content:center;
+    justify-content: space-around;
+}
+header .btm #searchFrm fieldset input[name$=search] {
+    border:0; width:90; padding:3px; outline:none;
+}
+header .btm #searchFrm fieldset input::placeholder {color:#1e6cb3;}
+header .btm #searchFrm fieldset #serch {}
+header .btm #searchFrm fieldset #serch img {}
+header .btm .btm_right {}
+header .btm .btm_right .btm_r_top {
+    display:flex;
+    justify-content:flex-end;
+    margin-bottom:10px;
+}
+header .btm .btm_right .btm_r_top #lang {
+    border:1px solid #1e6cb3; height:30px;
+    color:#999;
+    padding-left:7px;
+}
+header .btm .btm_right .btm_r_top #lang option {}
+header .btm .btm_right .btm_r_top button {
+    background-color:#1e6cb3;
+    width:40px; height:30px;
+    color:#fff;
+    margin-left:5px;
+}
+header .btm .btm_r_btm {}
+header .btm .btm_r_btm p {
+    color:#999;
+    line-height:1.2;
+}
+header .btm .btm_r_btm p:nth-child(1) {
+    font-size:1.375rem;
+    color:#000; font-weight:700;
+}
+main .banner {
+    width:1152px;
+    margin:0 auto;
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content: space-between;
+}
+/* left 배너 */
+main .banner .left {
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:space-between;
+    position:relative;
+}
+main .banner .left .bnr {}
+main .banner .left .bnr img {}
+main .banner .left .close {
+    background-color:#1e6cb3;
+    display:inline-block;
+    padding:10px;
+    color:#fff;
+    border-radius:5px;
+    position:absolute; bottom:10px; right:7px;
+}
+main .banner .left .close:hover {background-color:#344555}
+/* right-top 배너 */
+main .banner .right {
+    display:flex;
+    flex-flow:row wrap;
+    width:360px;
+
+}
+main .banner .right .corona {
+    position:relative; display:block;
+}
+main .banner .right .corona img {
+    margin-bottom:10px;
+}
+main .banner .right .corona span {
+    position:absolute;
+    display:inline-block;
+}
+main .banner .right .corona .date {
+    line-height:20px;
+    text-align:right;
+    width:158px; height:20px; font-size:0.875rem;
+    top:16px; right:22px;
+}
+main .banner .right .corona .result1 {width:140px; top:80px; left:30px;}
+main .banner .right .corona .result2 {width:140px; top:80px; right:30px;}
+main .banner .right .corona .result3 {width:93px; left:30px; bottom:62px;}
+main .banner .right .corona .result4 {width:93px; right:120px; bottom:62px;}
+main .banner .right .corona .result5 {width:62px; right:30px; bottom:62px;}
+main .banner .right .corona .result {
+    line-height:23px;
+    text-align:center;
+    color:#fff;
+    font-weight:300; height:23px;
+}
+/* right-btm 배너 */
+main .banner .right .bnr {}
+main .banner .right .bnr img {}
