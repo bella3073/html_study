@@ -152,3 +152,360 @@ main .banner .right .corona .result {
 /* right-btm 배너 */
 main .banner .right .bnr {}
 main .banner .right .bnr img {}
+/* main2 */
+main .service_wrap {
+    width:1152px; margin:0 auto;
+}
+main .service_wrap .title {
+    display:flex; flex-flow:row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin:30px 0 20px;
+    border-bottom:0.5px solid #999;
+    padding:20px 0;
+}
+main .service_wrap .title h2 {
+    font-size:1.375rem; font-weight:700;
+}
+main .service_wrap .title .site {
+    background-color:#fff; border:1px solid #999;
+    padding:5px 8px; font-size:0.85rem;
+}
+/* main2_btm */
+main .service_wrap .contents {
+    display:flex;
+    flex-flow:row nowrap;
+}
+main .service_wrap .contents a {
+    width:9.09%;
+    display:flex;
+    flex-flow:column nowrap;
+    align-items: center;
+}
+main .service_wrap .contents a:hover {
+    color:#1e6cb3;
+}
+main .service_wrap .contents a:nth-child(2n) {}
+main .service_wrap .contents a span {
+}
+main .service_wrap .contents a span:first-child {
+    height:60px; width:60px; background: #fff url(../images/icon_service/css_sprites.png) no-repeat;
+    background-position-y:0;
+}
+main .service_wrap .contents a span:last-child {
+    font-size:0.84rem; letter-spacing: -0.02em;
+    padding:5px 0;
+}
+main .service_wrap .contents a:nth-child(1) span:first-child {background-position-x:0;}
+main .service_wrap .contents a:nth-child(2) span:first-child {background-position-x:-60px;}
+main .service_wrap .contents a:nth-child(3) span:first-child {background-position-x:-120px;}
+main .service_wrap .contents a:nth-child(4) span:first-child {background-position-x:-180px;}
+main .service_wrap .contents a:nth-child(5) span:first-child {background-position-x:-240px;}
+main .service_wrap .contents a:nth-child(6) span:first-child {background-position-x:-300px;}
+main .service_wrap .contents a:nth-child(7) span:first-child {background-position-x:-360px;}
+main .service_wrap .contents a:nth-child(8) span:first-child {background-position-x:-420px;}
+main .service_wrap .contents a:nth-child(9) span:first-child {background-position-x:-480px;}
+main .service_wrap .contents a:nth-child(10) span:first-child {background-position-x:-540px;}
+main .service_wrap .contents a:nth-child(11) span:first-child {background-position-x:-600px;}
+/* main3_img_g */
+main .bnr2_bg {background-color:#eff4f8; height:150px; }
+main .bnr2_bg .img_g {
+    width:1152px; margin: 50px auto;
+    display:flex; justify-content: center;
+    flex-flow:row nowrap;
+    padding:40px 0;
+}
+main .bnr2_bg .img_g a {width:33.33%; display:inline-block;}
+main .bnr2_bg .img_g a img {width:100%;}
+/* service_page_____________이벤트신청, 이달의 행사 및 축제, 자주 찾은 서비스 */
+main .service_page {
+    width:1152px; margin:50px auto;
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content: space-between;
+}
+main .service_page > * {width:32%;}
+main .service_page .event {}
+/* 이벤트 신청&이달의 행사 top부분 */
+main .service_page .month .month_top,
+main .service_page .event .event_top {
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content: space-between;
+    align-items:center;
+    padding:15px 0; margin-bottom:15px;
+    border-bottom:1px solid #ccc;
+}
+/* 이벤트 신청&이달의 행사&자주 찾은 서비스 제목부분 */
+main .service_page .service > p,
+main .service_page .month .month_top p,
+main .service_page .event .event_top p {
+    font-size:1.4rem; font-weight:600;
+    letter-spacing:-0.02em;
+}
+/* 이벤트 신청&이달의 행사 +부분 */
+main .service_page .month .month_top a,
+main .service_page .event .event_top a {
+    width: 40px; height:30px;
+    background-color: #fff;
+    border:1px solid #ccc;
+    display:flex;
+    flex-flow:row nowrap;
+}
+/* + 아이콘 */
+main .service_page .month .month_top a::after,
+main .service_page .event .event_top a::after {
+    display:inline-block;
+    content:'\2b'; font-weight:600;
+    width: 40px; height:30px;
+    text-align:center; line-height:27px;
+}
+main .service_page .month .month_top a p,
+main .service_page .event .event_top a p {
+    text-indent:-9999px;
+}
+/* 이벤트신청 btm */
+main .service_page .event .event_btm {}
+/* 이벤트 신청&이달의 행사 btm 전체 구성 */
+main .service_page .month .month_btm a,
+main .service_page .event .event_btm a {
+    display:flex;
+    flex-flow:row nowrap;
+    align-items:center;
+}
+main .service_page .month .month_btm > a:hover,
+main .service_page .event .event_btm > a:hover {
+    border-bottom:1px solid #000;
+}
+/* 이벤트 신청&이달의 행사 btm 내용제목부분 */
+main .service_page .month .month_btm a p,
+main .service_page .event .event_btm a p {
+    line-height: 2;
+}
+/* 이벤트 신청&이달의 행사 btm 내용부분 */
+main .service_page .month .month_btm a p:last-child,
+main .service_page .event .event_btm a p:last-child {
+    width:90%;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    overflow:hidden;
+    padding-left:10px;
+    letter-spacing:-0.02em;
+}
+main .service_page .event .event_btm a .hj/* 행정 */ {color:#028ab6;}
+main .service_page .event .event_btm a .hg/* 환경 */ {color:#599100;}
+main .service_page .event .event_btm a .bj/* 복지 */ {color:#d76000;}
+main .service_page .event .event_btm a .jt/* 주택 */ {color:#c35c3c;}
+main .service_page .event .event_btm a .mh/* 문화 */ {color:#9b64d3;}
+/* ---------------이달의 행사 및 축제 */
+main .service_page .month {}
+main .service_page .month .month_top {}
+main .service_page .month .month_top p {}
+main .service_page .month .month_top a {}
+/* 이달의 행사 및 축제 btm */
+main .service_page .month .month_btm {}
+main .service_page .month .month_btm a {}
+main .service_page .month .month_btm a p {}
+main .service_page .month .month_btm a .hg/* 환경 */ {color:#599100;}
+main .service_page .month .month_btm a .gj/* 경제 */ {color:#069363;}
+main .service_page .month .month_btm a .mh/* 문화 */ {color:#9b64d3;}
+/* ---------------자주 찾은 서비스 */
+main .service_page .service {}
+main .service_page .service > p {
+    padding:20px 0;
+}
+main .service_page .service .ser_g {
+    background-color: #eff4f8;
+    display:flex;
+    flex-flow:column wrap;
+    align-content: space-between;
+    padding:20px; height:190px;
+}
+main .service_page .service .ser_g a {
+    width:50%; height:30px;}
+main .service_page .service .ser_g a p {}
+main .service_page .service .ser_g a p:hover {
+    display:inline-block;
+    border-bottom:1px solid #000;
+}
+/* 분야별 정보---------------------------------- */
+main .inform {
+    width:1152px; margin:0 auto 50px;
+}
+main .inform h2 {
+    margin-bottom:20px;
+    border-bottom:0.5px solid #999;
+    padding:20px 0;
+    font-size:1.375rem; font-weight:700;
+}
+main .inform .contents_inform {
+    display:flex;
+    flex-flow:row nowrap;
+}
+main .inform .contents_inform a {
+    width:12.5%;
+    display:flex;
+    flex-flow:column nowrap;
+    align-items: center;
+}
+main .inform .contents_inform a:hover {
+    color:#028ab6;
+}
+main .inform .contents_inform a span {}
+main .inform .contents_inform a span:first-child {
+    height:111px; width:105px;
+    background:#fff url(../images/icon_set/css_sprites.png) no-repeat;
+    background-position-y:0;
+}
+main .inform .contents_inform a span:last-child {
+    font-size:0.84rem; letter-spacing: -0.02em;
+    padding:5px 0;
+}
+main .inform .contents_inform a:nth-child(1) span:first-child {background-position-x:0;}
+main .inform .contents_inform a:nth-child(2) span:first-child {background-position-x:-105px;}
+main .inform .contents_inform a:nth-child(3) span:first-child {background-position-x:-210px;}
+main .inform .contents_inform a:nth-child(4) span:first-child {background-position-x:-315px;}
+main .inform .contents_inform a:nth-child(5) span:first-child {background-position-x:-420px;}
+main .inform .contents_inform a:nth-child(6) span:first-child {background-position-x:-525px;}
+main .inform .contents_inform a:nth-child(7) span:first-child {background-position-x:-630px;}
+main .inform .contents_inform a:nth-child(8) span:first-child {background-position-x:-735px;}
+/* 새소식-------------------------------------- */
+main .new {
+    width:1152px; margin:0 auto 70px;
+}
+main .new .new_t {
+    display:flex; flex-flow:row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom:0.5px solid #999;
+}
+main .new .new_t h2 {
+    padding:20px 0;
+    font-size:1.375rem; font-weight:700;
+}
+main .new .new_t p {
+    background-color:#fff; border:1px solid #999;
+    padding:5px 8px; font-size:0.85rem;
+}
+main .new .new_btm {
+    margin-top:20px;
+    display:flex;
+    flex-flow:row wrap;
+    justify-content: space-between;
+}
+main .new .new_btm a {
+    width:23.5%;
+    display:flex;
+    flex-flow:column wrap;
+    overflow:hidden;
+}
+main .new .new_btm a p {position:relative;}
+main .new .new_btm a p img {
+    width:100%;
+    transition:all 0.5s;
+}
+main .new .new_btm a p:first-child {height:180px; overflow:hidden;}
+main .new .new_btm a:hover p img {
+    /* width 속성의 경우 -> 왼쪽 상단 기준점으로 인해 우측하단으로만 이미지가 확대된다. */
+    /* width:110%;
+    position:absolute; left:50%; top:50%;
+    transform:translate(-50%, -50%); */
+    transform: scale(1.1);
+    /* css 수치값 변화가 일어날 때 애니메이션 적용 */
+    /* ex) 100 -> 110 값변화 o */
+    /* ex) row -> column 값변화 x */
+}
+main .new .new_btm a span {
+    margin:15px 0 30px;
+    font-size:0.9rem;
+    letter-spacing:-0.02em;
+}
+/* footer-------------------------------------------- */
+main footer {
+    width:1152px; margin:0 auto;
+}
+/* footer top */
+main footer .f_top {
+    padding:10px 0;
+    border-top:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:space-between;
+    align-items:center;
+}
+main footer .f_top .f_t_left {}
+main footer .f_top .f_t_left a {
+    font-size:0.75rem;
+    color:#999;
+    letter-spacing:-0.02em;
+}
+main footer .f_top .f_t_left a::after {
+    width:1px; height:10px; background-color:#999;
+    content:''; display: inline-block;
+    position:relative;
+    margin-left:10px;
+}
+main footer .f_top .f_t_left a:nth-child(2) {
+    color:#000;
+}
+main footer .f_top .f_t_left a:last-child::after {
+    display:none;
+}
+main footer .f_top .f_t_right {}
+main footer .f_top .f_t_right a {
+    height:45px; width:35px; background:#fff url(../images/icon_sns2/css_sprites.png) no-repeat;
+    background-position-y:0; display:inline-block;
+}
+main footer .f_top .f_t_right a:nth-child(1) {background-position-x:0;}
+main footer .f_top .f_t_right a:nth-child(2) {background-position-x:-45px;}
+main footer .f_top .f_t_right a:nth-child(3) {background-position-x:-90px;}
+main footer .f_top .f_t_right a:nth-child(4) {background-position-x:-135px;}
+main footer .f_top .f_t_right a:nth-child(5) {background-position-x:-180px;}
+main footer .f_top .f_t_right a:nth-child(6) {background-position-x:-225px;}
+/* hover-------------- */
+main footer .f_top .f_t_right a:hover {
+    height:45px; width:35px; background:#fff url(../images/icon_sns2/css_sprites1.png) no-repeat;
+    background-position-y:0; display:inline-block;
+}
+main footer .f_top .f_t_right a:nth-child(1):hover {background-position-x:0;}
+main footer .f_top .f_t_right a:nth-child(2):hover {background-position-x:-45px;}
+main footer .f_top .f_t_right a:nth-child(3):hover {background-position-x:-90px;}
+main footer .f_top .f_t_right a:nth-child(4):hover {background-position-x:-135px;}
+main footer .f_top .f_t_right a:nth-child(5):hover {background-position-x:-180px;}
+main footer .f_top .f_t_right a:nth-child(6):hover {background-position-x:-225px;}
+/* hover부분 끝-------------------------- */
+main footer .f_top .f_t_right a span {
+    display:inline-block;
+    text-indent: -9999px;
+}
+/* footer-btm */
+main footer .f_btm {
+    padding:15px 0 50px;
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:space-between;
+}
+/* footer btm-왼쪽 */
+main footer .f_btm .f_b_left {
+    display:flex;
+    flex-flow:row nowrap;
+}
+main footer .f_btm .f_b_left img {width:107px; height:46px;}
+main footer .f_btm .f_b_left img .f_text {
+}
+main footer .f_btm .f_b_left .f_text address {margin-left:20px;}
+main footer .f_btm .f_b_left .f_text address a {}
+main footer .f_btm .f_b_left .f_text p {margin-left:20px;}
+main footer .f_btm .f_b_left .f_text address,
+main footer .f_btm .f_b_left .f_text address a,
+main footer .f_btm .f_b_left .f_text p {
+    font-size:0.75rem;
+    letter-spacing:-0.02em;
+    line-height:1.5;
+    font-weight:350;
+}
+/* footer btm - 오른쪽 */
+main footer .f_btm .f_b_right {}
+main footer .f_btm .f_b_right a {}
+main footer .f_btm .f_b_right a img {}
