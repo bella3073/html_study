@@ -463,9 +463,10 @@ main footer .f_top .f_t_right a:nth-child(3) {background-position-x:-90px;}
 main footer .f_top .f_t_right a:nth-child(4) {background-position-x:-135px;}
 main footer .f_top .f_t_right a:nth-child(5) {background-position-x:-180px;}
 main footer .f_top .f_t_right a:nth-child(6) {background-position-x:-225px;}
+main footer .f_top .f_t_right a:nth-child(7) {background-position-x:-270px;}
 /* hover-------------- */
 main footer .f_top .f_t_right a:hover {
-    height:45px; width:35px; background:#fff url(../images/icon_sns2/css_sprites1.png) no-repeat;
+    height:45px; width:35px; background:#fff url(../images/icon_sns2/css_sprites\ 1.png) no-repeat;
     background-position-y:0; display:inline-block;
 }
 main footer .f_top .f_t_right a:nth-child(1):hover {background-position-x:0;}
@@ -474,6 +475,7 @@ main footer .f_top .f_t_right a:nth-child(3):hover {background-position-x:-90px;
 main footer .f_top .f_t_right a:nth-child(4):hover {background-position-x:-135px;}
 main footer .f_top .f_t_right a:nth-child(5):hover {background-position-x:-180px;}
 main footer .f_top .f_t_right a:nth-child(6):hover {background-position-x:-225px;}
+main footer .f_top .f_t_right a:nth-child(7):hover {background-position-x:-270px;}
 /* hover부분 끝-------------------------- */
 main footer .f_top .f_t_right a span {
     display:inline-block;
