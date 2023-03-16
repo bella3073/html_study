@@ -1,0 +1,154 @@
+body {background-color:#f5f6f7;}
+/* header */
+/* 언어선택-------------------------- */
+header {
+    width:750px; margin:0 auto;
+    position: relative;
+}
+header #lang {
+    position:absolute;
+    top:0; right:0;
+    padding:3px 10px;
+    border:1px solid #c1c1c1;
+}
+header #lang option {}
+/* main----------------------------- */
+main {
+    width:500px; margin:0 auto;
+}
+/* 로고 이미지----------------------- */
+main a {display: inline-block; padding:80px 25% 30px;}
+main a img {}
+/* 로고 하단 모두 동의--------------- */
+main .check {
+    display:flex;
+    flex-flow:row nowrap;
+    margin-bottom:30px;
+}
+main .check p {}
+main .check p #check1 {}
+main .check label {}
+main .check label p {
+    margin-left:5px;
+    line-height:1.2;
+    font-weight:500;
+    font-size:0.95rem;
+    border-bottom:1px solid #000;
+    display:inline-block;
+}
+/* main p #check1 {} */
+/* main label {} */
+/* 박스1----------------------- */
+main .check_01 {}
+main .check_03 .text,
+main .check_01 .text {
+    display:flex;
+    flex-flow:row nowrap;
+    align-items: center;
+}
+main .check_01 .text p {}
+main .check_01 .text p #check2 {}
+/* text통합-------------------------------------------------!!!! */
+main .check_03 .text label,
+main .check_02 .box2_top .text label,
+main .check_01 .text label {
+    margin-left:5px;
+    line-height:1.2;
+    font-weight:500;
+    font-size:0.95rem;
+    display:inline-block;
+}
+main .check_03 label em,
+main .check_02 .box2_top .text label em,
+main .check_01 .text label em {
+    line-height:1.2;
+    font-size:0.95rem;
+    color:#08a600;
+}
+/* text통합 끝 ------------------------------ */
+/* 박스 통합 --------------------------------------- */
+main .check_03 .box3,
+main .check_02 .box2,
+main .check_01 .box1 {
+    width:100%; height:100px; overflow: auto;
+    border:1px solid  #c1c1c1;
+    background-color:#fff;
+    margin:20px 0;
+}
+main .check_01 .box1 {}
+/* 박스 안 설명통합 */
+main .check_03 .box3 p,
+main .check_02 .box2 p,
+main .check_01 .box1 p {
+    margin:10px 10px;
+    line-height:1.2;
+    font-size:0.8rem;
+}
+main .check_01 .box1 p:nth-child(2),
+main .check_01 .box1 p:nth-child(3) {
+    margin-bottom:50px;
+}
+/* 여러분을 환영합니다. */
+main .check_03 .box3 p em,
+main .check_02 p em,
+main .check_01 .box1 p em {
+    display:inline-block;
+    line-height:1.2;
+    font-weight:500;
+    font-size:0.95rem;
+}
+/* 박스2----------------------- */
+main .check_02 {}
+main .check_02 .box2_top {
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content: space-between;
+}
+main .check_02 .box2_top .text {
+    display:flex;
+    flex-flow:row nowrap;
+    align-items: center;
+}
+main .check_02 .box2_top .text p {}
+main .check_02 .box2_top .text p #check3 {}
+main .check_02 .box2_top .text label {}
+main .check_02 .box2_top .text label em {}
+main .check_02 .box2_top p {}
+main .check_02 .box2_top p button {
+    border:1px solid #08a600;
+    color:#08a600;
+    padding:5px 10px;
+    font-size:0.8rem;
+    background:#fff;
+    letter-spacing: -0.02em;
+}
+main .check_02 p {}
+main .check_02 p em {}
+main .check_02 .box2 {}
+main .check_02 .box2 p {}
+main .check_02 .box2 p:nth-child(2),
+main .check_02 .box2 p:nth-child(3) {margin-bottom:50px;}
+/* 박스3--------------------------- */
+main .check_03 {}
+main .check_03 .text {}
+main .check_03 .text p {}
+main .check_03 .text p #check4 {}
+main .check_03 .text label {}
+main .check_03 .text label em {color:#c1c1c1;}
+main .check_03 .box3 {}
+main .check_03 .box3 p {}
+main .check_03 .box3 p:nth-child(2),
+main .check_03 .box3 p:nth-child(3) {margin-bottom:50px;}
+/* 취소, 확인 버튼 ---------------- */
+main .button_g {background-color: #08a600;}
+main .button_g .button {}
+main .button_g .button button {background-color: aqua; display: inline-block;}
+main .button_g .button a {}
+main .button_g .button a button {}
+main .button_g p {}
+main .button_g p em {}
+/* footer */
+footer {}
+footer .f_top {}
+footer .f_top a {}
+footer p {}

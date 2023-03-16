@@ -1,0 +1,103 @@
+body {background-color: #f5f6f7;}
+main {
+    width: 920px; margin: 0 auto;
+}
+main #lang {
+    float: right;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+}
+main #lang option {
+}
+main h1 {
+    padding-top: 50px;
+    clear: both;
+    text-align: center;
+    padding-bottom: 30px;
+}
+main h1 a {}
+main h1 a img {}
+main #loginFrm {}
+main #loginFrm fieldset {
+    display: flex;
+    flex-flow: column nowrap;
+align-items: center;}
+main #loginFrm fieldset legend {}
+main #loginFrm fieldset ul {}
+main #loginFrm fieldset ul li {
+}
+main #loginFrm fieldset ul li input {
+    border: 1px solid #c1c1c1;
+    background-color: white;
+    width: 458px; height: 58px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+main #loginFrm fieldset .login {}
+main #loginFrm fieldset .login button {
+    border: 1px solid #19ce60;
+    background-color: #19ce60;
+    width: 458px; height: 58px;
+    margin-bottom: 10px;
+}
+main #loginFrm fieldset .login_y {
+    width: 458px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-bottom: 18px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #c1c1c1;
+}
+main #loginFrm fieldset .login_y .check {}
+main #loginFrm fieldset .login_y .check #login_y {}
+main #loginFrm fieldset .login_y .check span {}
+main #loginFrm fieldset .login_y .check2 a {}
+main #loginFrm fieldset .login_y .check2 a span {}
+main #loginFrm fieldset .login_y .check2 a span em {color: #19ce60;}
+main #loginFrm fieldset .login_y .check2 a:last-child span {
+    text-decoration: underline;}
+    main #loginFrm fieldset .login_y .check2 a:last-child span::before {
+        width: 1px; height: 13px;
+        display: inline-block;
+        content: ''; background-color: #8e8e8e;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+main #loginFrm fieldset .find {
+    width: 458px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+main #loginFrm fieldset .find a {
+    padding-left: 10px;}
+main #loginFrm fieldset .find a p::after {
+    width: 1px; height: 13px;
+    display: inline-block;
+    content: ''; background-color: #8e8e8e;
+    margin-left: 10px;
+}
+main #loginFrm fieldset .find a:last-child p::after {display: none;}
+main #loginFrm fieldset .find a p {}
+main footer {
+    text-align: center;
+    margin-top: 30px;
+}
+main footer .f_top {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+main footer .f_top a {}
+main footer .f_top a p {}
+main footer .f_top a p::after {
+    width: 1px; height: 13px;
+    content: ''; background-color: #8e8e8e;
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+main footer .f_top a:last-child p::after {display: none;}
+main footer p {padding-top: 15px;}
