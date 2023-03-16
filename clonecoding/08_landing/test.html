@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <style>
+        .all {
+            padding:30px;
+            background:url(./images/bg2.png) no-repeat;
+        }
+        .all .box:frist-child {
+            font-size:2rem; text-align:center;
+            width:500px; height:200px;
+            background:linear-gradient(to top, rgba(0,0,0,0.5), transparent)
+            /* background:linear-gradient(#ff0, #0f0); */
+            /* linear-gradient(x y, color, clolr2) */
+            /* background:linear-gradient(45deg, #fff, #000); */
+            /* background:radial-gradient(circle, #ff0, #0f0) */
+            /* 0-----------100% */
+            /* background:linear-gradient(#900 1%, #928 99%) */
+        }
+        .all .box:last-child {
+            width:500px; height:1000px;
+            background: linear-gradient(180deg, rgba(238,174,202,1) 0%, rgba(156,209,126,1) 28%, rgba(163,188,250,1) 67%, rgba(233,148,190,1) 100%);
+        }
+    </style>
+</head>
+<body>
+    <div class="all">
+        <div class="box">A</div>
+        <div class="box">B</div>
+    </div>
+</body>
+</html>

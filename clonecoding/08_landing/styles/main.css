@@ -1,0 +1,275 @@
+#visual_bg {
+    background:url(../images/bg1.png) center;
+    background-size:cover;
+    background-attachment:fixed;
+}
+#visual_bg #visual_bg_gra {
+    background:linear-gradient(0deg, rgba(0,0,0,3), transparent 80%);
+    position:relative;
+}
+#visual_bg #visual_bg_gra .container {
+    width:1220px; margin:0 auto; padding:200px 0 400px 0;
+    text-align: center;
+    position:relative;
+}
+#visual_bg #visual_bg_gra .container .logo {
+    width:50px; position:absolute; left:0; top:0;
+}
+#visual_bg #visual_bg_gra .container .logo a {}
+#visual_bg #visual_bg_gra .container .logo a img {
+    width:100%; 
+}
+/* text */
+#visual_bg #visual_bg_gra .container .title,
+#visual_bg #visual_bg_gra .container .title em {
+    color:#fff;
+    font-size:4rem;
+    line-height: 1.2em; letter-spacing:-0.02em;
+}
+#visual_bg #visual_bg_gra .container .title {
+    margin-bottom:50px;
+}
+#visual_bg #visual_bg_gra .container .title em {
+    font-weight:700;
+}
+#visual_bg #visual_bg_gra .container .sponsor {}
+#visual_bg #visual_bg_gra .container .sponsor img {}
+#visual_bg #visual_bg_gra .container .question {
+    position:absolute; right:0; bottom:300px;
+}
+#visual_bg #visual_bg_gra .container .question img {}
+
+
+/* quiz------------------------------------------------------------ */
+#quiz_bg {
+    background:url(../images/quiz_bg.png) center;
+    background-size:cover;
+    background-attachment:fixed;
+}
+#quiz_bg .container {
+    width:1220px; margin:0 auto; padding:70px 0;
+    display:flex; flex-flow:row nowrap;
+    justify-content: space-around;
+}
+#quiz_bg .container .left {width:50%;}
+#quiz_bg .container .left #quizFrm {}
+#quiz_bg .container .left #quizFrm fieldset {}
+#quiz_bg .container .left #quizFrm fieldset h2 {
+    font-size:3rem; font-weight:700;
+    text-align: center;
+    line-height:1.5;
+}
+#quiz_bg .container .left #quizFrm fieldset h3 {font-size:1.4rem; line-height:2.3; text-align: center;}
+/* 글씨 전체 편집--- */
+#quiz_bg .container .left #quizFrm fieldset h2,
+#quiz_bg .container .left #quizFrm fieldset h3,
+#quiz_bg .container .left #quizFrm fieldset ul li label,
+#quiz_bg .container .left #quizFrm fieldset p .quiz_answer,
+#quiz_bg .container .right p:last-child {
+    color:#fff; letter-spacing: -0.02em;
+}
+/* 퀴즈 목록------------------------------------------- */
+#quiz_bg .container .left #quizFrm fieldset ul {}
+#quiz_bg .container .left #quizFrm fieldset ul li {}
+#quiz_bg .container .left #quizFrm fieldset ul li input[name=quiz] {}
+#quiz_bg .container .left #quizFrm fieldset ul li label {font-size:1.2rem; line-height:2.3;}
+#quiz_bg .container .left #quizFrm fieldset p {}
+#quiz_bg .container .left #quizFrm fieldset p .quiz_answer {
+    background-color:rgb(22, 22, 22); padding:15px 0; width:100%;
+    margin:15px 0;
+    border-radius: 50px; display:inline-block;
+    text-align: center;
+}
+/* 퀴즈 오른쪽--------------------------------------------- */
+#quiz_bg .container .right {}
+#quiz_bg .container .right p {margin:50px 0;}
+#quiz_bg .container .right p:last-child {
+    text-align: center;
+}
+#quiz_bg .container .right p img {}
+/* 유튜브 ------------------------------------------------------------------------------ */
+.campaign {}
+/* campaign통합 */
+.campaign_bg {}
+.campaign_bg .container {width:1220px; margin:0 auto; padding:100px 0;}
+.campaign_bg .container h1,
+.campaign_bg .container h1 * {
+    font-size:3rem; letter-spacing: -0.02em;
+    line-height: 1.5;
+    font-weight: 700;
+}
+/* campaign1~7 배경모음 */
+.campaign {background:url(../images/video_bg.png);}
+.campaign2 {background:url(../images/50_bg.png);}
+.campaign3 {background-color: #eee;}
+.campaign4 {background:url(../images/50_bg.png);}
+.campaign5 {background:url(../images/wwf.jpg);}
+.campaign6 {background:url(../images/50_bg.png);}
+.campaign7 {background:url(../images/bg2.png);}
+.campaign_bg {background-size:cover; background-position:center;}
+/* campaign1~7 제목 근접 단락 통일 */
+.campaign_bg .container h1+p {
+    font-size:1.7rem; letter-spacing:-0.02em; line-height:1.5;
+}
+/* 텍스트 통일 선택자 */
+.campaign_bg .container h1 em {
+    background-color: #fff;
+    color:rgba(0,0,0,3); padding:8px 2px;
+}
+/* campain1 */
+.campaign .container {
+    display:flex;
+    flex-flow:column nowrap;
+    align-items: center;
+}
+.campaign .container h1 {text-align: center;}
+.campaign .container iframe {
+    margin:40px 0;}
+.campaign .container a {}
+.campaign .container a img {
+    padding-bottom:80px;
+}
+/* 캠페인2 최근 20년사이~~ ------------------------------------------------------------ */
+.campaign2 {}
+.campaign2 .container {
+    padding:100px 0;
+}
+.campaign2 .container h1 {color:#fff;}
+.campaign2 .container h1 em {}
+/* text 변경 */
+.campaign2 .container h1,
+.campaign2 .container h1 em {
+    margin-bottom:10px;
+}
+.campaign2 .container p {color:#fff; margin-bottom:20px;}
+.campaign2 .container p img {width:100%}
+/* 캠페인3 빙하가 녹으면~~ ----------------------------------------------------------- */
+.campaign3 {}
+.campaign3 .container {}
+.campaign3 .container h1 {text-align: center;}
+.campaign3 .container h1+p {text-align: center; padding:20px 0 100px;}
+.campaign3 .container ul {
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+.campaign3 .container ul li {
+    color:#fff;
+    text-align: center;
+    width:32%;
+}
+.campaign3 .container ul li:nth-child(1) {
+    background:url(../images/28.png) center;
+    background-size:cover;
+    background-position-y:380px;
+}
+.campaign3 .container ul li:nth-child(2) {
+    background:url(../images/27.png) center;
+    background-size:cover;
+    background-position-y:380px;
+}
+.campaign3 .container ul li:nth-child(3) {
+    background:url(../images/28.png) center;
+    background-size:cover;
+    background-position-y:380px;
+}
+.campaign3 .container ul li h2 {font-size:3rem; font-weight:700; padding-top:40px;}
+.campaign3 .container ul li p {font-size:1.3rem; padding:30px 20px 170px;}
+.campaign3 .container ul li p:last-child {
+    font-size:1.3rem;
+    letter-spacing: -0.02em;
+    line-height:1.5;
+    height:250px;
+    background-color:#fff;
+    color:#000;
+}
+/* 캠페인4 북극곰의 위기는 지구 전체의 위기~~ ----------------------------------------- */
+.campaign4 {}
+.campaign4 .container {}
+.campaign4 .container h1 {color:#fff;}
+.campaign4 .container h1 em {color:rgba(0,0,0,3);}
+.campaign4 .container p {color:#fff; margin:20px 0;}
+.campaign4 .container img {width:100%}
+/* 캠페인5 믿을 수 있는 호나경보전 단체 wwf ------------------------------------------ */
+.campaign5 {position:relative;}
+.campaign5::before {
+    content:''; display: inline-block; width:100%; height:100%;
+    background:rgba(255, 255, 255, 0.5);
+    position:absolute;
+
+}
+.campaign5 .container {position:relative; z-index:9999;}
+.campaign5 .container h1 {}
+@media screen and (max-width:1500px){
+    .campaign5 .container h1 {
+        flex-flow:row wrap;
+    }
+}
+.campaign5 .container p {
+    font-size:1.7rem; letter-spacing:-0.02em; line-height:1.5;
+    padding:20px 0;
+}
+.campaign5 .container h1,
+.campaign5 .container p {text-align: center;}
+/* 캠페인6 북극곰 보호에 참여하시면 감사 선물을 드립니다 ----------------------------- */
+.campaign6 {}
+.campaign6 .container {
+    text-align: right;}
+.campaign6 .container .top {
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content: space-between;
+    text-align: left;
+    margin-bottom:50px;
+}
+.campaign6 .container .top h1 {}
+.campaign6 .container .top a {}
+.campaign6 .container .top h1,
+.campaign6 .container p {
+    color:#fff;
+}
+.campaign6 .container ul {
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content: space-between;
+}
+.campaign6 .container ul li {}
+.campaign6 .container ul li p:first-child {
+    width:380px; height:250px;
+    overflow:hidden;
+}
+.campaign6 .container ul li p:last-child {
+    text-align: center;
+    font-size:1.2rem;
+    line-height:1.5;
+    margin-top:10px;
+}
+.campaign6 .container ul li p img {
+    width:100%;
+}
+.campaign6 .container > p {
+    margin-top:50px;
+    color:#000;
+    background-color:#fff;
+    font-size:1.2rem;
+    display:inline-block;
+}
+/* 캠페인7 북극곰의 위기, 지켜볼 수 만은 없습니다 ------------------------------------ */
+.campaign7 {background-position-y:0;}
+.campaign7 .container {text-align:center;}
+.campaign7 .container h1 {}
+.campaign7 .container p {margin: 20px 0 50px; font-weight:700;}
+.campaign7 .container a {}
+.campaign7 .container a img {}
+/* footer ------------------------------------------------------------------------ */
+footer {
+    width:1220px; margin:0 auto;
+    padding:30px 0 50px;
+}
+footer h1 {
+    font-size:1.5rem;
+    font-weight:700;
+    padding:20px 0;
+}
+footer .f_btm {}
+footer .f_btm p {line-height:2em; font-size:1.2rem;}
