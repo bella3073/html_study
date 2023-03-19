@@ -202,4 +202,3 @@
    <dt>bkground 통합속성</dt>
    <dd>background:color image repeat position</dd>
 </dl>
-
