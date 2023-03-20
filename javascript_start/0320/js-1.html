@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js-1</title>
+    <script>
+        // 내부 스크립트
+        // var 그릇 //빈 저장소
+        // var 그릇 = 쌀밥 //데이터 대입
+        // var 그릇 = 콩밥 //데이터 변경
+        //객체.속성
+        //객체.메소드()
+        // var box1 = 10 //대입
+        // window.alert(box1) //출력
+
+        var box1 //변수생성
+        var box2 = 1 //생성, 대입 동시 선언
+        console.log(box1) //undefined
+        box1 = 10
+        box2 = box1 //우측의 값을 왼쪽에 대입한다 (대입 연산자)
+        console.log(box1) //10
+        box1 = 20
+        console.log(box1) //20
+        console.log(box1, box2)
+
+        console.log(typeof box1) //이 데이터 타입이 무엇인지 알려줌
+        console.log(typeof box2)
+
+        var box3 = 'A'
+        console.log(typeof box3)
+        console.log(typeof box1+1)
+        console.log(typeof box3+1)
+
+        var box4 = '아이디를 입력하세요'
+        console.log(box4.length)
+
+        var a = 1
+        var b = a
+        var c = a + b + c
+        console.log(a, b, c) //1,1,NaN(Not a Number)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
