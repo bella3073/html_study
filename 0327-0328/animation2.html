@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        * {margin:0; padding:0; box-sizing:border-box;}
+        .box {
+            width:200px; height:200px;
+            background:aqua;
+            animation:right300 1s ease both;
+        }
+        .box:nth-child(2) {animation:right300 0.7s ease 5}
+        .box:nth-child(3) {animation:right300 1.7s ease 5 reverse}
+        .box:nth-child(4) {animation:right300 1s ease 3 forwards}
+        .box:nth-child(5) {animation:right300 1s ease 5 alternate-reverse}
+        /* @keyframes */
+        /* 왼쪽 -> 오른쪽 300px 이동 */
+        @keyframes right300 {
+            0% {opacity:0; transform:translateX(0)} /* 애니메이션 시작값 */
+            100% {opacity:1;transform:translateX(300px) rotate(45deg) } /* 애니메이션 끝값 */
+        }
+        @keyframes bottom200 {
+            0% {transform:translateY(0)}
+            100% {transform:translateY(200px)}
+        }
+    </style>
+</head>
+<body>
+    <div class="box">A</div>
+    <div class="box">B</div>
+    <div class="box">C</div>
+    <div class="box">D</div>
+    <div class="box">E</div>
+</body>
+</html>
