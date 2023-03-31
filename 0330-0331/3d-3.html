@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3d-3</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <style>
+        body, html {
+            background:#eee; text-align:center;
+        }
+        #perspective {
+            display:inline-flex;
+            margin-top:250px;
+            transform-style:perserve-3d;
+            perspective:700px;
+        }
+        #perspective .box {
+            background:hotpink;
+            width:200px; height:200px;
+            border:6px solid #fff;
+            box-shadow:-3px 5px 10px #222;
+            animation:box 0.5s linear alternate both;
+        }
+        /* #perspective .box:hover {
+            animation:box2 0.3s ease both;
+        } */
+        #perspective .box:nth-child(1) {
+            margin-right:100px;
+            animation:box2 1s ease forwards,
+                box2 1s 2s ease alternate-reverse forwards;
+        }
+        #perspective .box:nth-child(2) {
+            animation:box2 1s 1s ease forwards,
+                box2 1s ease alternate-reverse forwards 3s;
+        }
+        @keyframes box {
+            0% {transform:rotateX(0) rotateZ(45deg);}
+            100% {transform:rotateX(40deg) rotateZ(45deg);}
+        }
+        @keyframes box2 {
+            0% {
+                transform:rotateX(40deg) rotateZ(45deg) scale(1);
+                border-radius:0;
+                box-shadow:-3px 5px 10px #222;
+            }
+            100% {
+                transform:rotateX(0) rotateZ(0) scale(1.2);
+                border-radius:20px;
+                box-shadow:-3px 100px 30px -30px #777;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="perspective">
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>
