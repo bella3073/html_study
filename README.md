@@ -202,5 +202,5 @@
    <dt>bkground 통합속성</dt>
    <dd>background:color image repeat position</dd>
 </dl>
-
+<h2>23.04.02 - 포트폴리오 전체 디자인 정리</h2>
 
