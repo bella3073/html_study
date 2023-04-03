@@ -1,0 +1,148 @@
+/* scrollbar css(chrome) 가상 선택자이기 때문에 앞 쪽에 ::을 붙여주어야한다. */
+::-webkit-scrollbar {width:10px; height:10px;}
+::-webkit-scrollbar-track {background:lightgoldenrodyellow;}
+::-webkit-scrollbar-thumb {background:linear-gradient(#00ffff, #ff00ff); border-radius:5px;}
+/* design */
+body {
+    overflow-x:hidden;
+    background:url(../images/7598163.jpg) no-repeat;
+    background-attachment:fixed;
+    background-size:cover;
+    background-position-y:-150px;
+}
+main {
+    display:flex; flex-flow:column nowrap;
+    align-items:center; justify-content:center; height:100vh;
+}
+main .photo {
+    width:200px; height:200px;
+    border-radius:50%; overflow:hidden;
+    border:5px solid #fff;
+    animation:img 1.5s linear alternate infinite;
+}
+main .photo img {width:100%;}
+main h1 {
+    font-family: 'Lobster', cursive;
+    margin-top:30px;
+    font-size:2rem;
+    font-weight:700;
+    letter-spacing:-0.02em;
+    text-transform:capitalize;
+    background:linear-gradient(to right, #ff00ff, #00ffff, #ff00ff);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    background-size:400%;
+    animation:bg 5s linear infinite;
+}
+main .loading {
+    display:inline-block;
+    content:''; width:300px; height:10px;
+    background-color:#fff;
+    border-radius:25px;
+    margin:20px 0 40px; overflow:hidden;
+}
+main .loading .bar {
+    background:#ff00ff;
+    display:block;
+    width:100%; height:10px;
+    transform:scaleX(0);
+    transform-origin:left;
+    transition:all 3s ease;
+}
+main .photo:hover ~ .loading .bar {transform:scale(1);}
+main p {
+    margin-bottom:30px;
+    letter-spacing:-0.02em;
+    font-weight:600;
+}
+main .sns {display:flex; justify-content:center;}
+main .sns a {
+    width:25px; margin-left:20px;
+    display:flex;
+    flex-flow:column nowrap;
+    align-items:center;
+}
+main .sns a:nth-child(1) {margin-left:0;}
+main .sns a img {width:100%;}
+main .sns a .tip {
+    font-family: 'Lobster', cursive;
+    background:#222; color:#fff; padding:5px;
+    margin-top:5px; opacity:0;
+}
+main .sns a:hover .tip {
+    opacity:1;
+}
+main .gnb {
+    width:30px; height:25px;
+    position:relative; display:block;
+    margin-top:70px;
+}
+main .gnb span {
+    background:#222; width:100%; height:5px; display:block;
+    border-radius:10px; position:absolute; transition:all 0.3s;
+}
+main .gnb span:nth-child(1) {top:0;}
+main .gnb span:nth-child(2) {top:10px;}
+main .gnb span:nth-child(3) {bottom:0;}
+
+main .gnb:hover span:nth-child(1) {transform:translateY(10px) rotate(45deg);}
+main .gnb:hover span:nth-child(2) {opacity:0;}
+main .gnb:hover span:nth-child(3) {transform:translateY(-10px) rotate(-45deg);}
+
+/* main.bg */
+.bg {}
+.bg > div {
+    background:url(../images/bg_new.png) repeat-x;
+    width:150%; height:80px;
+}
+.bg .txt1 {
+    transform:rotate(-10deg) translateX(-100px);
+    animation:move 15s linear alternate infinite;
+}
+.bg .txt2 {
+    filter:invert(1);
+    background-color:rgba(225,225,225,0.5);
+    transform:rotate(10deg) translateX(-100px);
+    animation:move 15s linear alternate-reverse infinite;
+}
+
+/* project */
+.project {}
+.project .project_container {
+    max-width:1300px; margin:150px auto 0;
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+}
+.project .project_container a {
+    background:url(../images/bg.jpg) no-repeat center;
+    background-size:auto 100%; height:350px;
+    border-top-left-radius:150px;
+    border-top-right-radius:150px;
+    margin-left:10px; letter-spacing:-0.02em;
+    position:relative; overflow:hidden;
+    transition:all 0.3s;
+}
+.project .project_container a:hover {
+    box-shadow:5px 5px 10px #222;
+    background-size:auto 110%;
+}
+.project .project_container a:nth-child(1) {margin-left:0;}
+.project .project_container a .intro {
+    background:#fff; text-align: center;
+    position:absolute; bottom:0; width:100%;
+    padding:20px 30px;
+}
+.project .project_container a .intro h1 {}
+.project .project_container a .intro h2 {}
+.project .project_container a .intro p {}
+
+/* footer */
+footer {
+    color:#fff;
+    font-size:2rem;
+    text-transform:capitalize;
+    line-height:1.5; letter-spacing:-0.02em;
+    text-shadow:0 0 4px #333;
+    text-align:center;
+    margin:150px 0;
+}
