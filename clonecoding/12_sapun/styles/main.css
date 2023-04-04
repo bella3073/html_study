@@ -1,0 +1,243 @@
+body {
+  text-align: center;
+}
+
+#popup {
+  background-color: #eee;
+  padding: 10px 0;
+}
+#popup a {
+  color: #222;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+header {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+header h1 {
+  padding: 50px 0;
+}
+header .right {
+  padding: 20px 0;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  justify-content: right;
+  position: absolute;
+  right: 0;
+  bottom: 50px;
+}
+header .right li {
+  margin-right: 20px;
+}
+header .right li a {
+  position: relative;
+  font-size: 0.8rem;
+}
+header .right li a span {
+  font-size: 0.8rem;
+  padding: 5px 10px 4px;
+  border: 2px solid #ff7f50;
+  border-radius: 8px;
+  position: absolute;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  left: -30px;
+  top: 20px;
+}
+header .right li:first-child {
+  position: relative;
+}
+header .right li:first-child > a::after {
+  content: "";
+  display: inline-block;
+  background: url(../images/arr.png) no-repeat;
+  background-size: 100%;
+  width: 10px;
+  height: 10px;
+  margin-left: 5px;
+}
+header .right li:first-child .lang {
+  display: block;
+  background: #fff;
+  padding: 10px;
+  position: absolute;
+  left: -35px;
+  top: 23px;
+  z-index: 910;
+  border: 1px solid #aaa;
+}
+header .right li:first-child .lang a {
+  padding: 5px 0;
+  display: block;
+}
+header .all_nav {
+  display: block;
+  background: #fff;
+  border: 1px solid #aaa;
+  border-radius: 10px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 700px;
+  height: 500px;
+  z-index: 999;
+  text-align: center;
+  line-height: 500px;
+}
+header .all_nav .close {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 10px;
+}
+header .btm nav > ul {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+}
+header .btm nav > ul > li {
+  position: relative;
+}
+header .btm nav > ul > li > a {
+  font-size: 0.8rem;
+  padding: 15px;
+  display: block;
+  font-weight: 600;
+}
+header .btm nav > ul > li > a:hover {
+  color: #ff3456;
+  font-weight: 600;
+  font-style: oblique;
+}
+header .btm nav > ul > li .sub {
+  display: block;
+  background: #fff;
+  position: absolute;
+  width: 100%;
+  z-index: 900;
+  border: 1px solid #aaa;
+}
+header .btm nav > ul > li .sub li a {
+  padding: 10px;
+  display: block;
+  font-size: 0.8rem;
+}
+
+main #right_popup {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+main #right_popup #popup_btn {
+  background: #fff;
+  width: 30px;
+  background-size: cover;
+  position: absolute;
+  top: 40%;
+  right: 499px;
+}
+main #right_popup #popup_btn a {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #aaa;
+}
+main #right_popup #popup_btn a img {
+  width: 70%;
+}
+main #right_popup #popup_btn a:first-child {
+  background: #ff7f50;
+}
+main #right_popup #popup_btn a:first-child > img {
+  width: 20%;
+}
+main #right_popup #popup_btn a:nth-child(4) > img {
+  width: 30%;
+}
+main #right_popup #popup_btn a:nth-child(5) > img {
+  width: 30%;
+}
+main #right_popup .contents {
+  background: #fff;
+  width: 500px;
+  margin: 0 auto;
+  border: 1px solid #aaa;
+}
+main #right_popup .contents .info {
+  padding: 20px 0;
+}
+main #right_popup .contents .info_contents {
+  color: #aaa;
+  letter-spacing: -0.02em;
+  line-height: 1.5;
+}
+main #right_popup .contents .user {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+  margin: 20px 0;
+  text-transform: uppercase;
+}
+main #right_popup .contents .user a {
+  width: 200px;
+  text-align: left;
+  border-bottom: 1px solid #aaa;
+  margin: 5px;
+  padding-bottom: 5px;
+}
+main #right_popup .contents .user a span {
+  color: #ff7f50;
+}
+main #right_popup .contents .board {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+  margin: 20px 0;
+  text-transform: uppercase;
+}
+main #right_popup .contents .board a {
+  width: 200px;
+  text-align: left;
+  border-bottom: 1px solid #aaa;
+  margin: 5px;
+  padding-bottom: 5px;
+}
+main #right_popup .contents h2 {
+  font-weight: 700;
+  padding: 20px 0 20px 40px;
+  text-align: left;
+}
+main #right_popup .contents h2 + p {
+  width: 200px;
+  padding-left: 40px;
+}
+main #right_popup .contents h2 + p img {
+  width: 100%;
+}
+main #right_popup .contents address {
+  text-align: left;
+  padding-left: 40px;
+  font-size: 2rem;
+}
+main #right_popup .contents address + p {
+  text-align: left;
+  padding: 20px 0 200px 40px;
+  line-height: 1.4;
+}/*# sourceMappingURL=main.css.map */
