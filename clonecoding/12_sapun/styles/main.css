@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   text-align: center;
 }
@@ -137,14 +138,16 @@ main #right_popup {
   position: fixed;
   top: 0;
   right: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
 }
 main #right_popup #popup_btn {
   background: #fff;
   width: 30px;
   background-size: cover;
-  position: absolute;
-  top: 40%;
-  right: 499px;
 }
 main #right_popup #popup_btn a {
   width: 30px;
@@ -240,4 +243,163 @@ main #right_popup .contents address + p {
   text-align: left;
   padding: 20px 0 200px 40px;
   line-height: 1.4;
+}
+main .visual {
+  margin-bottom: 80px;
+}
+main .main_board {
+  width: 1200px;
+  margin: 0 auto;
+  display: inline-grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+main .main_board a {
+  width: 380px;
+  display: block;
+  margin: 0 auto;
+}
+main .main_board a img {
+  width: 100%;
+}
+main .weekly > h2 {
+  font-weight: 700;
+  margin: 80px 0 0;
+  text-transform: uppercase;
+}
+main .weekly ul {
+  display: inline-grid;
+  grid-template-areas: "g1 g2 g3" "g4 g5 g6";
+}
+main .weekly ul li {
+  margin: 80px 10px 0 0;
+  text-align: left;
+  letter-spacing: -0.02em;
+}
+main .weekly ul li a {
+  width: 380px;
+}
+main .weekly ul li a img {
+  width: 100%;
+}
+main .weekly ul li h2 {
+  margin: 10px 0;
+  font-size: 0.9rem;
+}
+main .weekly ul li .price {
+  margin-bottom: 45px; /* 가격과 선 사이 간격 */
+  font-size: 0.9rem;
+}
+main .weekly ul li .price span {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+main .weekly ul li .btn .size_re {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  border-top: 1px solid #aaa;
+  padding: 10px 0;
+}
+main .weekly ul li .btn .size_re .size, main .weekly ul li .btn .size_re .review {
+  font-size: 0.85rem;
+}
+main .weekly ul li .btn .size_re .review {
+  color: #ff7f50;
+}
+main .weekly ul li .btn .btn_btn {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  justify-content: left;
+}
+main .weekly ul li .btn .btn_btn p span {
+  padding: 3px 5px;
+  font-size: 0.8rem;
+  color: #fff;
+}
+main .weekly ul li .btn .btn_btn p .best {
+  background: #ffe4c4;
+}
+main .weekly ul li .btn .btn_btn p .order {
+  background: #000080;
+}
+main .weekly ul li .btn .btn_btn > p:nth-child(1) {
+  margin-right: 10px;
+}
+main .weekly ul li:nth-child(1) {
+  grid-area: g1;
+}
+main .weekly ul li:nth-child(2) {
+  grid-area: g2;
+}
+main .weekly ul li:nth-child(3) {
+  grid-area: g3;
+  margin-right: 0;
+}
+main .weekly ul li:nth-child(4) {
+  grid-area: g4;
+}
+main .weekly ul li:nth-child(5) {
+  grid-area: g5;
+}
+main .weekly ul li:nth-child(6) {
+  grid-area: g6;
+  margin-right: 0;
+}
+main .btn_img {
+  margin: 80px 0 0;
+  position: relative;
+  padding-bottom: 80px;
+  border-bottom: 1px solid #222;
+}
+main .btn_img img {
+  width: 100%;
+}
+main .btn_img .btn_txt {
+  position: absolute;
+  top: 25%;
+  right: 50%;
+  transform: translate(50%, 50%);
+}
+main .btn_img .btn_txt h1 {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+main .btn_img .btn_txt a {
+  font-weight: 600;
+  padding: 10px 20px;
+  border: 1px solid #fff;
+  display: inline-block;
+  margin-top: 10px;
+  color: #fff;
+}
+
+footer {
+  width: 1200px;
+  margin: 40px auto;
+}
+footer .f_top {
+  text-align: left;
+}
+footer .f_top a {
+  display: inline-block;
+  color: #aaa;
+  margin-right: 30px;
+  padding: 15px 0;
+  font-size: 0.85rem;
+}
+footer .f_top a:last-child {
+  margin-right: 0;
+}
+footer p {
+  text-align: left;
+  font-size: 0.85rem;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
 }/*# sourceMappingURL=main.css.map */
