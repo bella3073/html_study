@@ -19,10 +19,14 @@ function order_reset(){
     result.innerHTML = total.toLocaleString('ko-kr')
 }
 function order_add(){
-    num++
-    total = price*num
-    number.innerHTML = num
-    result.innerHTML = total.toLocaleString('ko-kr')
+    if(num < 10){
+        num++
+        total = price*num
+        number.innerHTML = num
+        result.innerHTML = total.toLocaleString('ko-kr')
+    }else{
+        window.alert('최대 구매수량입니다.')
+    }
 }
 btn.addEventListener('click',order_add)
 reset.addEventListener('click',order_reset)
