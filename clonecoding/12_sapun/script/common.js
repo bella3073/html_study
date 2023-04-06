@@ -44,16 +44,27 @@ nav_acc[12].addEventListener('mouseout',function(){
 })
 
 //6. 4-5동일
+let kr_bo = true
+kr_lnb.addEventListener('click',function(){
+    if(kr_bo){
+        // console.log('보이기')
+        kr_lnb_open.style.display = 'block'
+    }else{
+        // console.log('숨기기')
+        kr_lnb_open.style.display = 'none'
+    }
+    kr_bo = !kr_bo
+})
 // 언어창
-kr_lnb.addEventListener('mouseover',function(){
-    // console.log(this) 작동 확인
-    kr_lnb_open.style.display = 'block'
+// kr_lnb.addEventListener('mouseover',function(){
+//     // console.log(this) 작동 확인
+//     kr_lnb_open.style.display = 'block'
     
-})
+// })
 
-kr_lnb_open.addEventListener('mouseout',function(){
-    kr_lnb_open.style.display = 'none'
-})
+// kr_lnb_open.addEventListener('mouseout',function(){
+//     kr_lnb_open.style.display = 'none'
+// })
 //---------------------------------------------right popup
 const right_pop = document.querySelector('#right_popup')
 const popup_btn = document.querySelector('#popup_btn a:first-child')
@@ -61,10 +72,17 @@ console.log(right_pop, popup_btn)
 //1. right 500 숨기기
 right_pop.style.transform = 'translateX(500px)'
 //2. popup_btn 클릭 -> right 보이기
+//right popup if 연습---------------------------
+let popup_boolean = true
 popup_btn.addEventListener('click',function(){
     right_pop.style.transition = 'all 0.5s'
-    right_pop.style.transform = 'translateX(0)'
+    if(popup_boolean){
+        // console.log('보이기')        
+        right_pop.style.transform = 'translateX(0)'
+    }else{
+        // console.log('숨기기')
+        right_pop.style.transform = 'translateX(500px)'
+    }
+    popup_boolean = !popup_boolean
 })
-popup_btn.addEventListener('mousedown',function(){
-    right_pop.style.transform = 'translateX(500px)'
-})
+
