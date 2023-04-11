@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>카히스토리</title>
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/common.css">
+    <link rel="stylesheet" href="./style/main.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./image/car.png" type="image/x-icon">
+    <link rel="icon" href="./image/car.png" type="image/x-icon">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="h_bg">
+        <header>
+            <h1><a href="#"><img src="./image/logo.png" alt="CarHistory"></a></h1>
+            <div class="right">
+                <nav>
+                    <a href="#">충전회원</a>
+                    <a href="#">보험개발원</a>
+                    <a href="#">LANG</a>
+                    <a href="#"><i class="fa-solid fa-magnifying-glass" title="검색"></i></a>
+                    <a href="#" class="all_nav">전체메뉴</a>
+                </nav>
+            </div>
+        </header>
+    </div>
+    <main>
+        <div id="visual">
+            <h1>중고차 매장가서 보기 전에<br>
+                <em>카히스토리 확인 하세요</em>
+            </h1>
+            <div class="category">
+                <a href="#">사고이력조회</a>
+                <a href="#">무료침수차량조회</a>
+                <a href="#">무료폐차사고조회</a>
+                <a href="#">자동차보험료조회</a>
+            </div>
+            <div class="view_box">
+                <form action="#" method="post" id="viewFrm">
+                    <fieldset>
+                        <legend class="skip">사고이력조회양식</legend>
+                        <select name="number_view" id="number_view">
+                            <option value="number1">차량번호</option>
+                            <option value="number2">차대번호</option>
+                        </select>
+                        <input type="text" placeholder="띄어쓰기 없이 차량번호를 입력하세요(12가 1234)">
+                        <button type="button" id="view_btn">조회하기</button>
+                    </fieldset>
+                </form>
+                <div class="list">
+                    <a href="#">차대번호란?<i class="fa-solid fa-circle-question"></i></a>
+                    <a href="#">무료침수사고조회<i class="fa-solid fa-circle-question"></i></a>
+                    <a href="#">무료폐차사고조회<i class="fa-solid fa-circle-question"></i></a>
+                    <a href="#">카스토리<i class="fa-solid fa-circle-question"></i></a>
+                    <a href="#" class="sample_view"><i class="fa-regular fa-file-lines"></i>샘플 보고서 보기</a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,118 @@
+main {
+  background: url(../image/hero-bg-md-01.gif) center;
+  height: 100vh;
+  background-size: cover;
+}
+main #visual {
+  width: 1224px;
+  margin: 0 auto;
+}
+main #visual h1 {
+  padding-top: 300px;
+  text-align: center;
+  font-size: 3.75rem;
+  line-height: 1.3;
+  letter-spacing: -0.07em;
+}
+main #visual h1 em {
+  font-size: 3.75rem;
+  color: #189bfa;
+}
+main #visual .category {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0 40px;
+}
+main #visual .category a {
+  background: rgba(225, 225, 225, 0.8);
+  padding: 25px;
+  font-size: 1.3rem;
+  position: relative;
+}
+main #visual .category a::before {
+  content: "";
+  display: inline-block;
+  width: 2px;
+  height: 100%;
+  background: #aaa;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+main #visual .category a:first-child::before {
+  display: none;
+}
+main #visual .category a:first-child {
+  background: #ff5252;
+  color: #fff;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+main #visual .category a:last-child {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+main #visual .view_box {
+  background: rgba(0, 0, 0, 0.2);
+  width: 85%;
+  padding: 30px;
+  margin: 0 auto;
+  text-align: center;
+}
+main #visual .view_box #viewFrm fieldset {
+  display: grid;
+  grid-template-columns: 150px 1fr 150px;
+  grid-template-rows: 50px;
+}
+main #visual .view_box #viewFrm fieldset #number_view {
+  padding: 10px;
+}
+main #visual .view_box #viewFrm fieldset input {
+  margin: 0 5px;
+  padding: 0 15px;
+}
+main #visual .view_box #viewFrm fieldset #view_btn {
+  color: #fff;
+  background: #189bfa;
+}
+main #visual .view_box .list {
+  margin: 45px 0 50px;
+  overflow: hidden;
+}
+main #visual .view_box .list a {
+  float: left;
+  color: #fff;
+  position: relative;
+  top: 5px;
+}
+main #visual .view_box .list a i {
+  margin-left: 5px;
+  color: #189bfa;
+}
+main #visual .view_box .list a::before {
+  content: "";
+  width: 1px;
+  height: 17px;
+  display: inline-block;
+  background: #fff;
+  margin: 0 10px 0 5px;
+}
+main #visual .view_box .list a:first-child::before,
+main #visual .view_box .list a:last-child::before {
+  display: none;
+}
+main #visual .view_box .list .sample_view {
+  float: right;
+  border: 1px solid #fff;
+  padding: 7px 15px 7px 10px;
+  border-radius: 25px;
+  position: relative;
+  top: 0;
+}
+main #visual .view_box .list .sample_view i {
+  padding-right: 7px;
+}
+main #visual .view_box .list .sample_view:hover {
+  background: #fff;
+  color: #000;
+}/*# sourceMappingURL=main.css.map */
