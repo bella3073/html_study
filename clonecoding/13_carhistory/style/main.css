@@ -1,11 +1,9 @@
-main {
-  background: url(../image/hero-bg-md-01.gif) center;
-  height: 100vh;
-  background-size: cover;
-}
 main #visual {
-  width: 1224px;
+  width: 100%;
+  height: 100vh;
   margin: 0 auto;
+  background: url(../image/hero-bg-md-01.gif) center;
+  background-size: cover;
 }
 main #visual h1 {
   padding-top: 300px;
@@ -26,7 +24,6 @@ main #visual .category {
 main #visual .category a {
   background: rgba(225, 225, 225, 0.8);
   padding: 25px;
-  font-size: 1.3rem;
   position: relative;
 }
 main #visual .category a::before {
@@ -54,7 +51,7 @@ main #visual .category a:last-child {
 }
 main #visual .view_box {
   background: rgba(0, 0, 0, 0.2);
-  width: 85%;
+  width: 1000px;
   padding: 30px;
   margin: 0 auto;
   text-align: center;
@@ -101,6 +98,10 @@ main #visual .view_box .list a:first-child::before,
 main #visual .view_box .list a:last-child::before {
   display: none;
 }
+main #visual .view_box .list a:first-child {
+  position: relative;
+  top: 10px;
+}
 main #visual .view_box .list .sample_view {
   float: right;
   border: 1px solid #fff;
@@ -115,4 +116,145 @@ main #visual .view_box .list .sample_view i {
 main #visual .view_box .list .sample_view:hover {
   background: #fff;
   color: #000;
+}
+main .container {
+  width: 1224px;
+  margin: 0 auto;
+  padding: 100px 0 0;
+  text-align: center;
+}
+main .container .sub_title {
+  font-size: 0.9rem;
+}
+main .container .sub_title::after {
+  margin: 20px auto;
+  display: block;
+  content: "";
+  width: 20px;
+  height: 2px;
+  background: #aaa;
+}
+main .container h1 {
+  font-size: 1.3rem;
+  margin: 35px 0 25px;
+}
+main .container .contents {
+  color: #aaa;
+  font-weight: 600;
+}
+main #video .tab a {
+  margin: 50px 0 30px;
+  display: inline-block;
+  width: 130px;
+  padding: 25px 0;
+}
+main #video .tab a:first-child {
+  border-bottom: 4px solid #189bfa;
+}
+main #video .tab_contents .tab1 {
+  position: relative;
+}
+main #video .tab_contents .tab1 video {
+  width: 90%;
+}
+main #video .tab_contents .tab1 .img {
+  position: absolute;
+  bottom: -80px;
+  right: -30px;
+}
+main #video .tab_contents .tab2 p {
+  background: lime;
+  padding: 200px 0;
+}
+main #menu .tab {
+  border-bottom: 1px solid #222;
+  display: flex;
+  justify-content: center;
+  margin: 30px 0 0;
+}
+main #menu .tab a {
+  background: #fff;
+  border: 1px solid #222;
+  width: 130px;
+  height: 50px;
+  line-height: 50px;
+  display: inline-block;
+  margin-left: 10px;
+  position: relative;
+  bottom: -1px;
+}
+main #menu .tab a:first-child {
+  border-bottom: none;
+  margin: 0;
+}
+main #menu .tab a:first-child::before {
+  content: "";
+  display: block;
+  background: #189bfa;
+  height: 5px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+main #menu .tab_contents .tab1 {
+  padding-top: 30px;
+  text-align: left;
+  display: grid;
+  grid-template-areas: "t1 t2" "t3 t4" "t5 .";
+}
+main #menu .tab_contents .tab1 h2 {
+  line-height: 50px;
+  margin-bottom: 30px;
+}
+main #menu .tab_contents .tab1 h2:first-child {
+  grid-area: t1;
+  font-size: 2rem;
+  color: #189bfa;
+}
+main #menu .tab_contents .tab1 h2:nth-child(2) {
+  font-size: 1.5rem;
+  grid-area: t2;
+}
+main #menu .tab_contents .tab1 .big {
+  grid-area: t3;
+  width: 600px;
+}
+main #menu .tab_contents .tab1 .big img {
+  width: 100%;
+}
+main #menu .tab_contents .tab1 ul {
+  grid-area: t4;
+}
+main #menu .tab_contents .tab1 ul li {
+  border-bottom: 1px dashed #aaa;
+  padding: 20px 0;
+  display: flex;
+  flex-flow: row nowrap;
+}
+main #menu .tab_contents .tab1 ul li p {
+  margin: 7px 10px 0 0;
+}
+main #menu .tab_contents .tab1 ul li .li .num {
+  color: #189bfa;
+  line-height: 1.5;
+}
+main #menu .tab_contents .tab1 ul li .li h3 {
+  font-weight: 500;
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+main #menu .tab_contents .tab1 .intro {
+  margin: 30px 0;
+  grid-area: t5;
+}
+main #menu .tab_contents .tab1 .intro p {
+  line-height: 1.5;
+}
+main #menu .tab_contents .tab1 .intro p a {
+  color: #189bfa;
+}
+main #menu .tab_contents .tab2, main #menu .tab_contents .tab3, main #menu .tab_contents .tab4 {
+  background: pink;
+  padding: 250px 0;
 }/*# sourceMappingURL=main.css.map */

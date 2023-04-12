@@ -19,9 +19,6 @@
 #h_bg header .right nav a {
   margin-left: 10px;
 }
-#h_bg header .right nav a:hover {
-  color: #189bfa;
-}
 #h_bg header .right nav a:last-child:hover {
   background-color: #ff5252;
 }

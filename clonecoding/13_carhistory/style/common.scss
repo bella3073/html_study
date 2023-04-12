@@ -21,7 +21,7 @@ $txt3:#000;
         .right {
             nav {
                 a {margin-left:10px;}
-                a:hover {color:$point1;}
+                // a:hover {color:$point1;}
                 a:last-child:hover {$color:$bg1; background-color:$point2;}
                 a:nth-child(1) {}
                 a:nth-child(2) {
