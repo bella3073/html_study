@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0413-1</title>
+    <style>
+        button {padding:20px;}
+        #result {background:lightgoldenrodyellow; padding:20px;}
+        .a {border:2px solid lightblue;}
+        .b {font-size:5rem;}
+        .c {color:lightblue; font-weight:700;}
+        .d {background:yellow; font-style:italic;}
+    </style>
+</head>
+<body>
+    <button type="button" id="btn">click!</button>
+    <button type="button" id="reset">reset!</button>
+    <p id="result">변경대상</p>
+    <script>
+
+        const btn = document.querySelector('#btn')
+        const reset = document.querySelector('#reset')
+        const result = document.querySelector('#result')
+        console.log(btn, result)
+
+        result.classList.add('a','c')
+        btn.addEventListener('click',()=>{
+            result.classList.replace('a','b')
+            // result.classList.toggle('a')
+            // result.classList.add('a','b','c','d')
+            /* console.log(this) 동작확인
+            result.className = 'a'
+            result.className += ' b'
+            result.className += ' c'*/
+        })
+        reset.addEventListener('click',()=>{
+            // console.log(this) 동작확인
+            result.classList.remove('b')
+            // result.className = ''
+        })
+
+        //배경색 css
+        //객체.style.속성 = '값'
+
+        //배경색, 글자색, 글꼴, 크기 css
+        //객체.style.배경 = '값'
+        //객체.style.글자색 = '값' ...
+
+        //class {배경, 글자, 글꼴, 크기 ... 속성*10}
+        //객체.class/////////
+    </script>
+</body>
+</html>
