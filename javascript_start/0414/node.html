@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {padding:20px; margin:10px;}
+        #wrap {background:lightblue;}
+        #wrap #box {background:lightgoldenrodyellow;}
+        #wrap #box p {background:lightpink;}
+        #result {background:lightsteelblue;}
+        #result .test {background:lightyellow;}
+        .a {border:5px dashed lightblue; color:lightblue; font-weight:700;}
+        .b {animation:opacity 0.5s linear 0.5s both;}
+        .c {animation:text 1s linear both;}
+        @keyframes opacity {
+            0% {opacity:0;}
+            100% {opacity:1;}
+        }
+        @keyframes text {
+            0% {}
+            100% {
+                color:lightblue; font-size:2rem; font-weight:700; font-style:italic; text-shadow:0 0 5px #fff;
+                background:rgb(255, 241, 243);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="box">
+            <p class="first">frist</p>
+            <p class="second">second</p>
+            <p class="last">last</p>
+        </div>
+    </div>
+    <div id="result">
+        <p class="test">test</p>
+    </div>
+    <!-- <script src="./script/node1.js"></script> -->
+    <!-- <script src="./script/node2.js"></script> -->
+    <!-- <script src="./script/node3.js"></script> -->
+    <!-- <script src="./script/node4.js"></script> -->
+    <script src="./script/node5.js"></script>
+</body>
+</html>
