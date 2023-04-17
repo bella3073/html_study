@@ -1,0 +1,89 @@
+$color1:#222;
+$color2:#fff;
+$color3:#003a14;
+$color4:#f1f1f1;
+$color5:#888;
+$color6:#ccc;
+@mixin row-nowrap {display:flex; flex-flow:row nowrap;}
+//1400px
+// .sub {display:none;} //임시 초기값
+// .sub_sub {display:none;} //임시 초기값
+
+.h_bg {
+    background:rgba(225,225,225,0.5);
+    border-bottom:1px solid $color5;
+    position:fixed; left:0; top:0; width:100%;
+    header {
+        width:1400px; margin:0 auto; padding: 20px 0; height:100px;
+        @include row-nowrap; justify-content:space-between; align-items:center;
+        h1 {a {img {}}}
+        nav {
+            .gnb {
+                @include row-nowrap;
+                > li {
+                    position:relative; padding-right:80px;
+                    > a {font-size:1.2rem; font-weight:600;
+                        display:block; line-height:100px;
+                    }
+                    .sub {
+                        width:100%; height:70vh; background:lightblue;
+                        position:absolute;
+                        li {
+                            a {font-size:1.1rem; width:100%; display:block; padding-left:7px; line-height:3;}
+                            .sub_sub {li {
+                                border-bottom:1px dashed $color5;
+                                a {
+                                color:$color5; padding-left:10px;
+                                display:block; line-height: 2.5;
+                                font-size:1rem;
+                                }
+                            }}
+                        }
+                    }
+                }
+            }
+            .nav_bg {
+                background:$color2; height:80vh;
+                position:absolute; top:101px; left:-2000px; width:1000%; z-index:-1;
+            }
+        }//e:nav
+        // nav::before {
+        //     content:''; display:inline-block; width:1000%; height:650px;
+        //     background:$color2; position:absolute; top:101px; left:-300%;
+        // }
+        .all_nav {
+            display:flex; flex-flow:column nowrap; justify-content:space-between; align-items:center;
+            height:30px;
+            span {content:''; display:block; height:7px; width:50px; background:$color3;}
+            span:nth-child(1) {transform:skewX(-40deg) translateX(0);}
+            span:nth-child(2) {transform:skewX(-40deg) translateX(-5px);}
+            span:nth-child(3) {transform:skewX(-40deg) translateX(-10px);}
+        }
+    }//e:header
+}
+main {
+    background:url(../images/unid/bg.jpg) center;
+    background-size:cover;
+    .visual {
+        width:1400px; margin:0 auto; height:100vh;
+        @include row-nowrap; justify-content:space-between;
+        // position:relative;
+        h1 {
+            color:$color2; font-size:2.5rem; font-weight:700;
+            letter-spacing:-0.02em; line-height:1.3;
+            // position:absolute; top:30%; left:0;
+        }
+        .play {
+            width:200px;
+            position:absolute; top:30%; right:0;
+            img {position:relative;}
+            img:first-child {
+                position:absolute; top:100px; left:50%;
+                transform:translate(-50%, -50%);
+            }
+            img:last-child {
+                width:100%;
+            }
+        }
+    }
+}

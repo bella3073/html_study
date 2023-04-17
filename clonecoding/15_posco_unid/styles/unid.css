@@ -1,0 +1,125 @@
+.h_bg {
+  background: rgba(225, 225, 225, 0.5);
+  border-bottom: 1px solid #888;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+.h_bg header {
+  width: 1400px;
+  margin: 0 auto;
+  padding: 20px 0;
+  height: 100px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.h_bg header nav .gnb {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.h_bg header nav .gnb > li {
+  position: relative;
+  padding-right: 80px;
+}
+.h_bg header nav .gnb > li > a {
+  font-size: 1.2rem;
+  font-weight: 600;
+  display: block;
+  line-height: 100px;
+}
+.h_bg header nav .gnb > li .sub {
+  width: 100%;
+  height: 70vh;
+  background: lightblue;
+  position: absolute;
+}
+.h_bg header nav .gnb > li .sub li a {
+  font-size: 1.1rem;
+  width: 100%;
+  display: block;
+  padding-left: 7px;
+  line-height: 3;
+}
+.h_bg header nav .gnb > li .sub li .sub_sub li {
+  border-bottom: 1px dashed #888;
+}
+.h_bg header nav .gnb > li .sub li .sub_sub li a {
+  color: #888;
+  padding-left: 10px;
+  display: block;
+  line-height: 2.5;
+  font-size: 1rem;
+}
+.h_bg header nav .nav_bg {
+  background: #fff;
+  height: 80vh;
+  position: absolute;
+  top: 101px;
+  left: -2000px;
+  width: 1000%;
+  z-index: -1;
+}
+.h_bg header .all_nav {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 30px;
+}
+.h_bg header .all_nav span {
+  content: "";
+  display: block;
+  height: 7px;
+  width: 50px;
+  background: #003a14;
+}
+.h_bg header .all_nav span:nth-child(1) {
+  transform: skewX(-40deg) translateX(0);
+}
+.h_bg header .all_nav span:nth-child(2) {
+  transform: skewX(-40deg) translateX(-5px);
+}
+.h_bg header .all_nav span:nth-child(3) {
+  transform: skewX(-40deg) translateX(-10px);
+}
+
+main {
+  background: url(../images/unid/bg.jpg) center;
+  background-size: cover;
+}
+main .visual {
+  width: 1400px;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+main .visual h1 {
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.3;
+}
+main .visual .play {
+  width: 200px;
+  position: absolute;
+  top: 30%;
+  right: 0;
+}
+main .visual .play img {
+  position: relative;
+}
+main .visual .play img:first-child {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+main .visual .play img:last-child {
+  width: 100%;
+}/*# sourceMappingURL=unid.css.map */
