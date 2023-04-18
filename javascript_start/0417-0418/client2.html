@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>client-2</title>
+    <style>
+        section {height:100vh; opacity:0;}
+        .s1 {background:lightsteelblue; opacity:1;}
+        .s2 {background:lightgoldenrodyellow;}
+        .s3 {background:rgb(160, 115, 160);}
+        .s4 {background:rgb(214, 190, 194);}
+        .animation {animation:top 2s ease both;}
+        .animation2 {animation:top2 2s ease both;}
+        @keyframes top {
+            0% {opacity:0; transform:translateY(300px)}
+            100% {opacity:1; transform:translateY(0)}
+        }
+        @keyframes top2 {
+            0% {opacity:0; transform:translateY(500px) skew(30deg);}
+            100% {opacity:1; transform:translateY(0) skew(0);}
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section class="s1">1</section>
+        <section class="s2">2</section>
+        <section class="s3">3</section>
+        <section class="s4">4</section>
+    </main>
+    <script>
+
+        const section = document.querySelectorAll('section')
+        window.addEventListener('scroll',()=>{
+            console.log(section[1].getBoundingClientRect().top)
+            if(section[1].getBoundingClientRect().top < 200){
+                section[1].classList.add('animation')
+            }
+            if(section[2].getBoundingClientRect().top < 300){
+                section[2].classList.add('animation2')
+            }
+            if(section[3].getBoundingClientRect().top < 300){
+                section[3].classList.add('animation')
+            }
+        })
+
+    </script>
+</body>
+</html>

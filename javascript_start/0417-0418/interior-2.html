@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>interior-2</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <style>
+
+        html,body {scroll-behavior:smooth;}
+        header {text-align:center; position:fixed; width:100%; top:0; left:0;}
+        header h1 {
+            font-size:3rem; font-weight:600; font-style:italic; line-height:100px;
+            background:rgba(255, 255, 255, 0.6);
+        }
+        header #btn {background:#fff;}
+        header #btn a {width:100px; line-height:60px; display:inline-block;}
+        /* .h_scroll {display:none;} */
+
+        /* main */
+        main {}
+        main .box {height:100vh; background-size:cover; background-position:center;}
+        main .box1 {background-image:url(./images/bg1.jpg);}
+        main .box2 {background-image:url(./images/bg2.jpg);}
+        main .box3 {background-image:url(./images/bg3.jpg);}
+        main .box4 {background-image:url(./images/bg4.jpg);}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Interior view</h1>
+        <div id="btn">
+            <a href="#" id="a">A</a>
+            <a href="#" id="b">B</a>
+            <a href="#" id="c">C</a>
+            <a href="#" id="d">D</a>
+        </div>
+    </header>
+    <main>
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+    </main>
+
+    <!-- script -->
+    <script>
+
+        const head = document.querySelector('header')
+        const btn = document.querySelectorAll('#btn a')
+        const box = document.querySelectorAll('main > .box')
+        console.log(head,btn,box)
+
+        //특정위치까지 스크롤 내릴 시 header 이동 (a는 유지)
+        head.style.transition = 'all 0.5s'
+        window.addEventListener('scroll',()=>{
+            if(window.pageYOffset >= box[1].offsetTop -800){
+                head.style.transform = 'translateY(-100px)'
+            }else{
+                head.style.transform = 'translateY(0)'
+            }
+        })
+
+        //btn a 클릭 시, 각 box 영역 이동
+        btn.forEach((obj,index)=>{
+            console.log(obj,index)
+            obj.addEventListener('click',(event)=>{
+                event.preventDefault() /* a tag 기본 기능 삭제 */
+                window.scrollTo(0,box[index].offsetTop)
+            })
+        })
+        
+    </script>
+</body>
+</html>

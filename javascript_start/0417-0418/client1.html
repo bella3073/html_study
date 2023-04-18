@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>client1</title>
+    <style>
+        html,body {
+            height:300vh;
+            background:linear-gradient(lightblue, #ffd2e6, #dadbb5, #94bbe9);
+        }
+        #pst {
+            padding:50px; position:relative; top:200px;
+        }
+    </style>
+</head>
+<body>
+    <button type="button" id="pst">위치</button>
+
+    <!-- script -->
+    <script>
+
+        const pst = document.querySelector('#pst')
+        console.log(pst)
+
+        window.addEventListener('scroll',()=>{
+            console.log('=====================================')
+            // console.log(`offest=>${pst.offsetTop}`)
+            // console.log(`client=>${pst.getBoundingClientRect().y}`)
+            if(pst.getBoundingClientRect().top > 150){
+                pst.style.background = '#fff'
+            }
+        })
+
+    </script>
+</body>
+</html>

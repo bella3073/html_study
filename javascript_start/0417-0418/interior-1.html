@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>interior</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <style>
+        html,body {scroll-behavior:smooth;}
+
+        #btn {
+            display:flex; flex-flow:column nowrap;
+            position:fixed; top:50%; right:50px;
+        }
+        #btn a {
+            background:#222; color:#fff; border-radius:50%;
+            width:30px; height:30px;
+            overflow:hidden;
+            transition:all 0.5s; position:absolute; right:0;
+        }
+
+        /* 버튼hover */
+        #btn a:hover {
+            background:rgba(0,0,0,0.5); text-indent:0; width:100px; border-radius:10px;
+        }
+
+        #btn a::after {
+            position:absolute;
+            line-height:30px; right:10px;
+            white-space:nowrap;
+            font-size:0.85rem; display:block;
+        }
+        #btn a:nth-child(1):hover::after {content:'Interior A.';}
+        #btn a:nth-child(2):hover::after {content:'Interior B.';}
+        #btn a:nth-child(3):hover::after {content:'Interior C.';}
+        #btn a:nth-child(4):hover::after {content:'Interior D.';}
+        #btn a:nth-child(1) {top:0;}
+        #btn a:nth-child(2) {top:40px;}
+        #btn a:nth-child(3) {top:80px;}
+        #btn a:nth-child(4) {top:120px;}
+
+        main {}
+        main .box {height:100vh; background-size:cover; background-position:center;}
+        main .box1 {background-image:url(./images/bg1.jpg);}
+        main .box2 {background-image:url(./images/bg2.jpg);}
+        main .box3 {background-image:url(./images/bg3.jpg);}
+        main .box4 {background-image:url(./images/bg4.jpg);}
+
+    </style>
+</head>
+<body>
+    <div id="btn">
+        <a href="#" id="a"></a>
+        <a href="#" id="b"></a>
+        <a href="#" id="c"></a>
+        <a href="#" id="d"></a>
+    </div>
+    <main>
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+    </main>
+
+    <!-- script -->
+    <script>
+        const a_btn = document.querySelectorAll('#btn a')
+        const box = document.querySelectorAll('main > .box')
+        console.log(a_btn, box)
+
+        for(let i in box){
+            console.log(box[i].offestTop)
+        }
+
+        a_btn.forEach((obj,index)=>{
+            console.log(obj,index)
+            obj.addEventListener('click',(event)=>{/* 클릭했을 때 일어나는 a tag 기본 능력을 삭제 */
+                event.preventDefault()
+                window.scrollTo(0,box[index].offsetTop)/* 버튼과 동일한 index의 위치로 이동시키겠다 */
+            })
+        })
+
+    </script>
+</body>
+</html>
