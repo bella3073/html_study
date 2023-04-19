@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>horizontal-5</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+        header {}
+        main {}
+        main .first, main .last {
+            background:rgb(4, 26, 4); color:lightgoldenrodyellow;
+            font-size:7rem; font-weight:600;
+            line-height:100vh; width:100%; text-align:center;
+        }
+        main .first {}
+        main .scroll_wrap {}
+        main .scroll_wrap .scroll_height {
+            height:400vh; background:rgb(4, 26, 4);
+        }
+        main .scroll_wrap .scroll_height .scroll_sticky {
+            background:url(./images/forest.gif);
+            background-repeat:repeat-x;
+            height:500px;
+            position:sticky; top:0;
+        }
+        main .scroll_wrap .scroll_height .scroll_sticky .container {}
+        main .scroll_wrap .scroll_height .scroll_sticky .container h1 {
+            font-family:'Satisfy'; font-size:10rem;
+            white-space:nowrap; padding:170px 100px; color:#fff;
+        }
+        main .last {}
+        footer {}
+    </style>
+</head>
+<body>
+    <header>header</header>
+    <main>
+        <section class="first">first section</section>
+
+        <!-- 스크롤 구간 시작 -->
+        <section class="scroll_wrap">
+            <div class="scroll_height">
+                <div class="scroll_sticky">
+                    <div class="container">
+                        <h1>hello this is my forest! hello this is my forest!</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="last">last section</section>
+    </main>
+    <footer>footer</footer>
+    <script>
+        const scroll_wrap = document.querySelector('.scroll_wrap')
+        const scroll_container = document.querySelector('.scroll_wrap .container')
+        console.log(scroll_wrap,scroll_container)
+
+        window.addEventListener('scroll',()=>{
+            let yOffset = window.scrollY
+            console.log(`scrollWrap 위치=>${scroll_wrap.offsetTop}`)
+            console.log(`scrollWrap 기준 스크롤값=>${yOffset - scroll_wrap.offsetTop}`)
+            let amount = yOffset - scroll_wrap.offsetTop
+
+            if(yOffset >= scroll_wrap.offsetTop){
+                scroll_container.style.transform = `translateX(-${amount}px)`
+            }else {
+                scroll_container.style.transform = `translateX(0px)`
+            }
+
+        })
+    </script>
+</body>
+</html>

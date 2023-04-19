@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>horizontal-1</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <style>
+        body,html {
+            width:3000px; height:5000px;
+            background:linear-gradient(to right, lightblue, #ffd2e6, #dadbb5, #94bbe9);
+            overflow-y:hidden;
+        }
+    </style>
+</head>
+<body>
+    
+    <script>
+
+        //가로스크롤 만들기
+        //delta, scrollLeft
+        const bd = document.querySelector('html,body')
+
+        bd.addEventListener('wheel',(e)=>{/* 마우스 휠을 돌렸을 때 */
+            // console.log(e)
+            //deltaX, deltaY 비교하려는 대상으로 속성이 2가지로 나뉘어지게 되어있음
+            //마우스 휠 움직임 정도를 감지하는 속성
+            //양수와 음수로 나뉘어짐
+            // console.log(e.deltaY)
+
+            //scrollLeft 수평스크롤바의 위치속성
+            bd.scrollLeft += e.deltaY
+        })
+
+    </script>
+</body>
+</html>

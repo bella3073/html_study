@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>horizontal-2</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <style>
+        html, body {overflow-y:hidden; overflow-x:auto; width:max-content;}
+        main {}
+        main section {}
+        main section .bg {
+            width:7000px; height:100vh;
+            background:
+                /* url(./images/game_background_1/layers/clouds_1.png), */
+                url(./images/game_background_1/layers/clouds_2.png),
+                /* url(./images/game_background_1/layers/clouds_3.png), */
+                /* url(./images/game_background_1/layers/clouds_4.png), */
+                url(./images/game_background_1/layers/rocks_2.png),
+                url(./images/game_background_1/layers/rocks_1.png),
+                url(./images/game_background_1/layers/sky.png);
+            background-position:center,right,left,center;
+            background-attachment:scroll, fixed, scroll, fixed;
+            background-size:50%, 1000px, 2000px, cover;
+            background-repeat:repeat-x, repeat-x, repeat-x, no-repeat;
+        }
+        main section .bg h1 {
+            font-size:10rem; font-weight:600;
+            text-align:center; line-height:100vh;
+            letter-spacing:-0.03em;
+            
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <div class="bg">
+                <h1>Portfolio 2023</h1>
+            </div>
+        </section>
+    </main>
+    <script>
+
+        const bd = document.querySelector('html,body')
+        bd.addEventListener('wheel',(e)=>{
+            bd.scrollLeft += e.deltaY
+        })
+
+        // document.body.addEventListener('wheel',(e)=>{
+        //     document.body.scrollLeft += e.deltaY
+        // })
+
+    </script>
+</body>
+</html>

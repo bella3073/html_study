@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video-3</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+</head>
+<style>
+    body {height:500vh; overflow-x:hidden;}
+    .container {}
+    .container img {
+        width:100%; position:fixed; left:0; top:0;
+    }
+</style>
+<body>
+    <div class="container">
+        <img src="./images/video/1.jpg" alt="">
+    </div>
+    <script>
+
+        const imgElem = document.querySelector('.container img')
+        let totalImageCount = 282
+        let videoImages = []
+        //282
+        setImages()
+        init()
+        function setImages(){
+            for(let i=1; i<=totalImageCount; i++){
+            let imgE = document.createElement('img') /* 282개의 img 태그가 만들어짐 */
+            imgE.src = `./images/video/${i}.jpg`
+            console.log(imgE)
+            videoImages.push(imgE)
+            }
+        }
+
+        function init(){//스크롤 동작 함수
+            window.addEventListener('scroll',()=>{
+                let progress = pageYOffset / (document.body.offsetHeight - window.innerHeight)
+                // console.log(progress)
+                let currentFrame = Math.round((totalImageCount-1) * progress)
+                // console.log(`progress>>${progress},currentFrame>>${currentFrame}`)
+                imgElem.src = videoImages[currentFrame].src
+            })
+        }
+    </script>
+</body>
+</html>

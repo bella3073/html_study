@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>horizontal-3</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <style>
+        ::-webkit-scrollbar {width:10px; height:10px;}
+        ::-webkit-scrollbar-track {background:lightgoldenrodyellow;}
+        ::-webkit-scrollbar-thumb {background:lightcoral; border-radius:5px;}
+        html,body {overflow-y:hidden; overflow-x:auto; width:max-content;}
+        main {}
+        main section {}
+        main section .bg {
+            width:7000px; height:100vh;
+            background-image:
+            url(./images/game_background_4/layers/clouds_1.png),
+            url(./images/game_background_4/layers/clouds_2.png),
+            url(./images/game_background_4/layers/ground.png),
+            url(./images/game_background_4/layers/rocks.png),
+            url(./images/game_background_4/layers/sky.png);
+            /* background-position:center, right, center, left, center; */
+            background-attachment:scroll, scroll, scroll, fixed, fixed;
+            background-repeat:repeat-x, repeat-x, repeat-x, repeat-x, no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <div class="bg">
+                <!-- <h1>Portfolio 2023</h1> -->
+            </div>
+        </section>
+    </main>
+    <script>
+
+        const bd = document.querySelector('html,body')
+
+        bd.addEventListener('wheel',(e)=>{
+            bd.scrollLeft += e.deltaY
+        })
+
+    </script>
+</body>
+</html>
