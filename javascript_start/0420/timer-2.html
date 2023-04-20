@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>timer2</title>
+    <style>
+        #slider_wrap {/* 너비가 넘치는 부분은 가려지도록 */
+            border:5px solid #000;
+            width:700px; overflow:hidden; margin:0 auto;
+        }
+        #slider_wrap #slider_container {/* 컨테이너를 제 크기로 가로로 가도록 설정 */
+            display:inline-flex;
+        }
+        #slider_wrap #slider_container .slide {
+            line-height:200px; width:700px; text-align:center; font-size:5rem;
+            
+        }
+        #slider_wrap #slider_container .slide1 {background:aqua;}
+        #slider_wrap #slider_container .slide2 {background:pink;}
+        #slider_wrap #slider_container .slide3 {background:coral;}
+    </style>
+</head>
+<body>
+    <!-- 슬라이드 기본 html -->
+    <div id="slider_wrap">
+        <div id="slider_container">
+            <div class="slide slide1">1</div>
+            <div class="slide slide2">2</div>
+            <div class="slide slide3">3</div>
+        </div>
+    </div>
+
+    <script>
+        let num = 0
+        const slide = document.querySelector('#slider_container')
+        //slide의 자식의 너비
+        console.log(slide.firstElementChild.offsetWidth)
+        console.log(slide.children[0].offsetWidth)
+        let slide_w = slide.firstElementChild.offsetWidth
+        console.log(slide.children.length) //자식의 개수
+        console.log(slide.childElementCount) //자식의 개수
+        let count = slide.childElementCount-1
+        setInterval(()=>{
+            num++
+            if(num>count){num=0}
+            console.log(num)
+            slide.style.transform = `translateX(${-slide_w*num}px)`
+        },1000)
+    </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>timer2</title>
+    <style>
+        #slider_wrap {border:5px solid #000; height:200px; overflow-y:hidden; width:700px;}
+        #slider_wrap #slider_container {}
+        #slider_wrap #slider_container .slide {
+            line-height:200px; width:700px; text-align:center; font-size:5rem;
+            
+        }
+        #slider_wrap #slider_container .slide1 {background:aqua;}
+        #slider_wrap #slider_container .slide2 {background:pink;}
+        #slider_wrap #slider_container .slide3 {background:coral;}
+    </style>
+</head>
+<body>
+    <!-- 슬라이드 기본 html -->
+    <div id="slider_wrap">
+        <div id="slider_container">
+            <div class="slide slide1">1</div>
+            <div class="slide slide2">2</div>
+            <div class="slide slide3">3</div>
+        </div>
+    </div>
+
+    <script>
+
+        let num = 0
+        const slide = document.querySelector('#slider_container')
+        let slide_h = slide.firstElementChild.offsetHeight
+        let count = slide.childElementCount-1
+
+        let timer = setInterval(slide_set, 1000)
+
+        function slide_set(){
+            num++
+            if(num>count){num=0}
+            slide.style.transform = `translateY(-${slide_h*num}px)`
+        }
+
+    </script>
+</body>
+</html>

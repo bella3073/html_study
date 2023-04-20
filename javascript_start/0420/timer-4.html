@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>timer2</title>
+    <style>
+        #slider_wrap {border:5px solid #000; height:200px; width:700px;}
+        #slider_wrap #slider_container {position:relative;}
+        #slider_wrap #slider_container .slide {
+            line-height:200px; width:700px; text-align:center; font-size:5rem;
+            position:absolute; left:0; top:0; opacity:0; transition:opacity 0.5s;
+            
+        }
+        #slider_wrap #slider_container .slide1 {background:red;}
+        #slider_wrap #slider_container .slide2 {background:orange;}
+        #slider_wrap #slider_container .slide3 {background:yellow;}
+    </style>
+</head>
+<body>
+    <!-- 슬라이드 기본 html -->
+    <div id="slider_wrap">
+        <div id="slider_container">
+            <div class="slide slide1">1</div>
+            <div class="slide slide2">2</div>
+            <div class="slide slide3">3</div>
+        </div>
+    </div>
+
+    <script>
+
+        const slide = document.querySelectorAll('.slide') 
+        let num = 0
+        let timer = setInterval(slide_timer,1000)
+        slide[0].style.opacity = 1 //css로 모두 투명하게 만든 상태라 script를 이용해 첫번째 이미지만 보이도록 만들어줌
+        function slide_timer(){
+            num++
+            if(num>2){
+                num=0
+                for(let i of slide){i.style.opacity = 0} //0으로 되돌아올 땐 모두 다시 투명하게 바뀌도록 해줌
+            }
+            slide[num].style.opacity = 1
+        }
+        
+
+    </script>
+</body>
+</html>
