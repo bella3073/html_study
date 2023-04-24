@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>trigger-1</title>
+    <!-- plugin CDN JS 연결(필수) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js" integrity="sha512-AMl4wfwAmDM1lsQvVBBRHYENn1FR8cfOTpt8QVbb/P55mYOdahHD4LmHM1W55pNe3j/3od8ELzPf/8eNkkjISQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- CSS 연결 -->
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+    <header>header</header>
+    <main>
+        <div class="wrap wrap1">
+            <div class="bg bg1">
+                <h1>그랜드 조선 부산 호텔</h1>
+            </div>
+        </div>
+        <div class="wrap wrap2">
+            <div class="bg bg2">
+                <h1>Grand Josun Busan Hotel</h1>
+            </div>
+        </div>
+        <div class="wrap wrap3">
+            <div class="bg bg3">
+                <h1>편안한 객실 최상의 서비스</h1>
+            </div>
+        </div>
+        <div class="wrap wrap4">
+            <div class="bg bg4">
+                <h1>최고의 휴가를 그랜드 조선 부산호첼과 함께하세요</h1>
+            </div>
+        </div>
+    </main>
+    <footer>footer</footer>
+    <script>
+
+        gsap.to('.wrap2 h2',{
+            scrollTrigger:'.wrap2',
+            duration:2,
+            transform:'skew(30deg)'
+        })
+        gsap.to('.bg1 h1',{
+            scrollTrigger:'.wrap1',
+            duration:1,
+            fontSize:'5rem', y:-100
+        })
+        gsap.to('.bg2',{/* bg2가 움직이는 애니메이션을 */
+            scrollTrigger:'.wrap2', /* wrap2 가 보일 때, */
+            duration:1, /* 1초동안 */
+            x:200
+        })
+        gsap.to('.bg3',{
+            scrollTrigger:'.wrap3',
+            duration:1,
+            x:200
+        })
+        gsap.to('.bg4',{
+            scrollTrigger:'.wrap4',
+            duration:1,
+            x:200
+        })
+
+        /*
+        gsap.to('대상',{
+            scrollTrigger:{
+                trigger:'대상',
+                속성:값,
+                속성:값
+            },속성:값, duration:재생시간
+        })
+
+        gsap.to('대상',{
+            scrollTrigger:'대상2',
+            속성:값,
+            속성:값,
+            duration:재생시간
+        })
+        */
+
+    </script>
+</body>
+</html>
+<!-- 
+    javascript plugin
+    완성된 기능을 담은 함수 - 개발자 무료/유료 배포
+
+-->
