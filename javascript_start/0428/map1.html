@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>map-1</title>
+    <style>
+        img[usemap] {width:100%;}
+    </style>
+</head>
+<body>
+    <!-- 이미지맵 연습2 -->
+    <img src="./images/ex2.jpg" alt="" usemap="#map2">
+    <map name="map2">
+        <area shape="rect" alt="" title="" coords="328,1510,671,1588" href="" target="" />
+    </map>
+
+    <img src="./images/ex.jpg" alt="" usemap="#map1">
+    <map name="map1">
+        <area shape="rect" alt="" title="" coords="148,695,410,723" href="" target="" />
+        <area shape="rect" alt="" title="" coords="435,695,696,723" href="" target="" />
+        <area shape="rect" alt="" title="" coords="720,694,983,723" href="" target="" />
+    </map>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://mattstow.com/experiment/responsive-image-maps/jquery.rwdImageMaps.min.js"></script>
+    <script>
+            $('img[usemap]').rwdImageMaps()
+    </script>
+</body>
+</html>
