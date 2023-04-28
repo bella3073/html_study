@@ -1,0 +1,81 @@
+/* header */
+header {text-align:center;}
+header #fixed {
+    background:#111;
+    position: fixed; top: 0; left: 0; width: 100%;
+    transition: all 0.2s ease; transition:all 0.3s;
+}
+header #fixed p {
+    color:#fff; font-size:0.9rem;
+    text-transform: capitalize; font-style: italic;
+    text-align:right; width:1000px; margin:0 auto; height:40px;
+}
+header h1 {margin-top:50px;}
+header h1 a {
+    width:260px; display:inline-block;
+    font-size:1.5rem; font-weight:700;
+    animation:spacing 1s ease alternate-reverse infinite;
+    line-height:1.4;
+}
+header h1 a img {width:100%;}
+header nav {
+    display:flex; flex-flow:row nowrap; justify-content:center; align-items:center;
+}
+header nav a {
+    display:inline-block; background:#000; color:#fff;
+    padding:8px 0 12px; width:120px; margin:50px 10px 50px 0;
+    transition:all 0.3s;
+}
+header nav a:last-child {margin-right:0;}
+header nav a:hover {box-shadow:0 0 15px #000;}
+
+/* main */
+main {}
+main .container {
+    overflow: hidden;
+}
+main .container .contents {width:1000px; height:500px; margin:0 auto;}
+main .container .contents1 {}
+main .container .contents2 {}
+main .container .contents3 {}
+main .container .contents img {width:100%;}
+/* 아코디언 */
+main .acodian {margin:50px 0 100px;}
+main .acodian section {
+    width: 1000px; margin:0 auto;
+    display:flex; flex-flow:row nowrap; justify-content: space-between;
+}
+main .acodian section .active {margin-bottom:20px;}
+main .acodian section .aco {text-align:center;}
+main .acodian section .aco .title {
+    text-transform:uppercase;
+    background:#000; color:#fff; padding:15px; display:block;
+    margin-bottom:10px; width:500px;
+}
+main .acodian section .aco .contents {text-align:center;}
+main .acodian section .aco .contents p {
+    line-height:1.5;
+    text-transform: uppercase; color:#fff; display:inline-block;
+    font-size:0.9rem; background:#111; width:500px; padding:50px 0;
+    box-shadow:0 0 20px #111; margin-bottom:10px;
+}
+
+.active {
+    display: block;
+    }
+
+
+/* footer */
+footer {
+    display:flex; flex-flow:row nowrap; justify-content:space-around; align-items:center;
+    background:#111; padding:40px 0;
+}
+footer h1 {width:100px;}
+footer h1 img {width:100%;}
+footer p {color:#fff; font-size:0.8rem; line-height: 1.5;}
+
+/* ketframes */
+@keyframes spacing {
+    0% {letter-spacing:0;}
+    100% {letter-spacing:0.5em;}
+}
